@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FP6-008 proposal stub 2026-09-10. NOT a full upstream manifest.
+     Full upstream manifest resolves at builder sync via:
+       repo init -u https://github.com/GrapheneOS/platform_manifest -b 17
+     then `repo manifest -r` to record immutable commits.
+     Branch below is a proposal (FP6-007), never a pin. -->
+<manifest>
+  <remote name="grapheneos"
+          fetch="https://github.com/GrapheneOS/" />
+  <default revision="refs/heads/17"
+           remote="grapheneos"
+           sync-j="4" />
+  <!-- Minimal DiamaneOS delta; remotes only until FP6-024/040 selects sources. -->
+  <include name="diamaneos.xml" />
+</manifest>

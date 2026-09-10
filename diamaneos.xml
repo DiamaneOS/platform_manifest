@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FP6-008 minimal delta 2026-09-10. Remotes only.
+     No <project> entries until FP6-024/040 selects exact sources.
+     Do not create empty kernel/app repos to match planned names.
+     Future entries pin immutable revisions, never branch names. -->
+<manifest>
+  <remote name="diamaneos"
+          fetch="https://codeberg.org/DiamaneOS/" />
+  <!-- Example (DO NOT uncomment until source selected + revision pinned):
+  <project path="device/fairphone/FP6"
+           name="android_device_fairphone_FP6"
+           remote="diamaneos"
+           revision="<immutable-commit>" />
+  -->
+</manifest>
