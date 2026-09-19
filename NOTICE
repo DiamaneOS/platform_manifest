@@ -1,0 +1,24 @@
+DiamaneOS source manifest
+Copyright 2026 DiamaneOS contributors
+
+Original DiamaneOS code, documentation and manifest additions are licensed
+under the Apache License, Version 2.0. The full text is in LICENSE. This grant
+does not assign a licence to imported upstream material or projects fetched
+through the manifests.
+
+GrapheneOS platform_manifest
+---------------------------
+
+default.xml imports the project definitions from:
+https://github.com/GrapheneOS/platform_manifest
+Revision: 75ae9fb65fa78389ea4a4d5f21aa1ba4be88e287
+The local change adds an include for diamaneos.xml. Upstream project names,
+remotes, attribution and the original generated-file notice are retained.
+
+The upstream COPPERHEAD-NOTICE is reproduced without modification in:
+third_party/grapheneos-platform-manifest/COPPERHEAD-NOTICE
+It is a statement by the upstream project, not a DiamaneOS-authored statement.
+
+See UPSTREAM-LICENSING.md for the imported file's provenance, the unresolved
+licence identification at this revision and the boundary between repository
+licensing and the separate licences of fetched projects.

@@ -23,3 +23,11 @@ or endorsed by the GrapheneOS project.
 Retain their attribution; DiamaneOS product branding must be integrated before
 distributing modified OS images, as described in the
 [GrapheneOS branding guidance](https://grapheneos.org/faq#trademarks).
+
+## Licence
+
+Original DiamaneOS code, documentation and manifest additions are licensed
+under [Apache-2.0](LICENSE). Imported project definitions and fetched source
+trees retain their upstream terms. See [NOTICE](NOTICE) and
+[upstream licensing and provenance](UPSTREAM-LICENSING.md), including the
+unresolved licence identification for the pinned upstream `default.xml`.
