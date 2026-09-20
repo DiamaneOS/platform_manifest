@@ -19,6 +19,8 @@ private/
 *id_ed25519*
 secrets*.json
 *token*.json
+__pycache__/
+*.py[cod]
 
 # Maintainer-private planning bundles
 *diamaneos-development-plan*.md
