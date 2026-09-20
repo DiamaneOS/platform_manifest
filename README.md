@@ -14,8 +14,9 @@ fork is actually integrated. Every project revision must be an exact commit.
 
 ## Use
 
-Initialize the source tree from the release declared by the selected build
-environment, then install the overlay before syncing:
+Environment v4 authenticates and syncs upstream directly; it does not install
+this empty overlay. The following illustrates future composition after the
+first downstream entry has been reviewed and bound in a new environment:
 
 ```sh
 repo init \
@@ -30,9 +31,10 @@ repo sync
 repo manifest -r -o resolved-manifest.xml
 ```
 
-The build procedure verifies the signed release, the resolved project map and
-the exact overlay revision. Adding the first project or changing an existing
-entry creates a new build-environment identity and requires a new source sync
+The current build procedure verifies the signed release and upstream resolved
+project map. The first consuming environment must additionally bind the exact
+overlay revision and digest and validate the composed project map. Adding the
+first project or changing an existing entry creates a new build-environment identity and requires a new source sync
 and affected qualification.
 
 DiamaneOS is based on GrapheneOS source and is not affiliated with or endorsed
