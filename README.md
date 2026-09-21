@@ -11,15 +11,16 @@ recorded in the corresponding immutable build environment in
 [`diamaneos.xml`](diamaneos.xml) tracks the Fairphone 6 device configuration and
 shared DiamaneOS product configuration on `android17`, inherited from the
 DiamaneOS remote. Fairphone projects remain pinned to exact upstream commits.
-These are initial integration sources: generated hardware inputs and native
-product-graph validation remain required before building usable images.
+Native product-graph, selected HAL and enforcing USER policy checks have passed
+for the development composition. Generated vendor and kernel inputs remain
+required; compilation does not establish image or device compatibility.
 The independently built kernel workspace is not overlaid onto Android source.
 
 ## Use
 
-Environment v4 authenticates and syncs upstream directly; it does not install
-this overlay. A new environment must bind the overlay revision, content digest
-and composed project map before using these projects. The source-layout verifier requires that explicit composition declaration;
+The FP6 build environment in `config/build-environment-fp6.json` in the tools
+repository binds this overlay, its content digest and the composed project map.
+The source-layout verifier requires that explicit composition declaration;
 upstream-only environments continue to reject local manifests.
 The following is the repo composition step, not an accepted build recipe:
 
@@ -36,10 +37,9 @@ repo sync
 repo manifest -r -o resolved-manifest.xml
 ```
 
-The current build procedure verifies the signed release and upstream resolved
-project map. The first consuming environment must additionally bind the exact
-overlay revision and digest and validate the composed project map. Adding the
-first project or changing an existing entry creates a new build-environment identity and requires a new source sync
+The build procedure verifies the signed release, upstream resolved project map
+and exact overlay composition. Changing a project entry or advancing a resolved
+owned branch creates a new build-environment identity and requires source sync
 and affected qualification.
 
 DiamaneOS is based on GrapheneOS source and is not affiliated with or endorsed
@@ -51,9 +51,10 @@ The original files in this repository are licensed under Apache-2.0. Projects
 fetched by `repo` retain their own licences, copyright notices and attribution
 requirements.
 
-The FP6 composition also pins Fairphone's published boot-control HAL and its
-GPT/UFS recovery extension at exact revisions. They are source inputs, with
-native dependency, hardening and device behavior validation still pending.
+The FP6 composition includes the source boot-control HAL and GPT/UFS recovery
+extension. Owned branches inherit `android17`; the build environment freezes
+their exact revisions. Normal/recovery compilation, CFI and matched UFS header
+layout checks pass. Runtime slot switching still needs device verification.
 No generic boot-control substitution is declared by this overlay.
 
 ## Hosting and branches
