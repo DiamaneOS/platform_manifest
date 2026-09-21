@@ -49,3 +49,8 @@ integrating product identity.
 The original files in this repository are licensed under Apache-2.0. Projects
 fetched by `repo` retain their own licences, copyright notices and attribution
 requirements.
+
+The FP6 composition also pins Fairphone's published boot-control HAL and its
+GPT/UFS recovery extension at exact revisions. They are source inputs, with
+native dependency, hardening and device behavior validation still pending.
+No generic boot-control substitution is declared by this overlay.

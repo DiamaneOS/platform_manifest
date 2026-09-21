@@ -9,8 +9,15 @@
 <manifest>
   <remote name="diamaneos"
           fetch="https://codeberg.org/DiamaneOS/" />
+  <remote name="fairphone"
+          fetch="https://gerrit-public.fairphone.software/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="314ab3fb34abe865ce7d174aec9615f38795549b" />
+           remote="diamaneos" revision="50ca22446d7557706057cf31d4d23b5ee160556d" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" revision="25902929a0cd4de5a30159c8a853b09c82662b81" />
+  <!-- Required published boot-control and GPT/UFS implementation. -->
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"
+           remote="fairphone" revision="7733efc0cce1149ce909e41cdf43164ab7bed8bf" />
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext"
+           remote="fairphone" revision="dfa77ea20218c0337793a02bfb9071f1a6dd020d" />
 </manifest>
