@@ -8,15 +8,19 @@ The selected release, manifest commit and resolved project-map digest are
 recorded in the corresponding immutable build environment in
 [`diamaneos-tools`](https://codeberg.org/DiamaneOS/diamaneos-tools/src/branch/main/config/build-environment.json).
 
-[`diamaneos.xml`](diamaneos.xml) currently declares the DiamaneOS remote but no
-projects. Add entries only when a DiamaneOS repository or reviewed upstream
-fork is actually integrated. Every project revision must be an exact commit.
+[`diamaneos.xml`](diamaneos.xml) pins the Fairphone 6 device configuration and
+shared DiamaneOS product configuration. Every revision is an exact commit.
+These are initial integration sources: generated hardware inputs and native
+product-graph validation remain required before building usable images.
+The independently built kernel workspace is not overlaid onto Android source.
 
 ## Use
 
 Environment v4 authenticates and syncs upstream directly; it does not install
-this empty overlay. The following illustrates future composition after the
-first downstream entry has been reviewed and bound in a new environment:
+this overlay. A new environment must bind the overlay revision, content digest
+and composed project map before using these projects. The source-layout verifier requires that explicit composition declaration;
+upstream-only environments continue to reject local manifests.
+The following is the repo composition step, not an accepted build recipe:
 
 ```sh
 repo init \

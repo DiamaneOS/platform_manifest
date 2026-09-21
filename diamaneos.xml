@@ -9,4 +9,8 @@
 <manifest>
   <remote name="diamaneos"
           fetch="https://codeberg.org/DiamaneOS/" />
+  <project name="device_fairphone_FP6" path="device/fairphone/FP6"
+           remote="diamaneos" revision="5065d58c2acc2bb264db82b8aa21344831965934" />
+  <project name="vendor_diamaneos" path="vendor/diamaneos"
+           remote="diamaneos" revision="25902929a0cd4de5a30159c8a853b09c82662b81" />
 </manifest>
