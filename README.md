@@ -6,7 +6,7 @@ release tag; this repository does not copy or repin the upstream manifest.
 
 The selected release, manifest commit and resolved project-map digest are
 recorded in the corresponding immutable build environment in
-[`diamaneos-tools`](https://codeberg.org/DiamaneOS/diamaneos-tools/src/branch/main/config/build-environment.json).
+[`diamaneos-tools`](https://github.com/DiamaneOS/diamaneos-tools/blob/main/config/build-environment.json).
 
 [`diamaneos.xml`](diamaneos.xml) pins the Fairphone 6 device configuration and
 shared DiamaneOS product configuration. Every revision is an exact commit.
@@ -54,3 +54,14 @@ The FP6 composition also pins Fairphone's published boot-control HAL and its
 GPT/UFS recovery extension at exact revisions. They are source inputs, with
 native dependency, hardening and device behavior validation still pending.
 No generic boot-control substitution is declared by this overlay.
+
+## Hosting and branches
+
+GitHub's DiamaneOS organization is the authoritative host. Use `android17`
+as this repository's default branch; it pins the current Android product line.
+There is no parallel `main` manifest. Future Android lines receive their own
+branches and immutable release tags identify accepted snapshots. Branch names
+are discovery entry points; build inputs remain pinned to exact commits.
+
+Repository remotes and the GitHub default branch must be configured separately
+from changing this overlay. Preserve signed history and independent Git backups.

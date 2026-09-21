@@ -8,7 +8,7 @@
 -->
 <manifest>
   <remote name="diamaneos"
-          fetch="https://codeberg.org/DiamaneOS/" />
+          fetch="https://github.com/DiamaneOS/" />
   <remote name="fairphone"
           fetch="https://gerrit-public.fairphone.software/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
