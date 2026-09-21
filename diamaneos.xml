@@ -17,8 +17,8 @@
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"
-           remote="fairphone" revision="7733efc0cce1149ce909e41cdf43164ab7bed8bf" />
-  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext"
-           remote="fairphone" revision="dfa77ea20218c0337793a02bfb9071f1a6dd020d" />
+  <project name="hardware_qcom_bootctrl" path="hardware/qcom/bootctrl"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext"
+           remote="diamaneos" />
 </manifest>
