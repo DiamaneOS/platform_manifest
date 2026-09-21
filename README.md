@@ -8,8 +8,9 @@ The selected release, manifest commit and resolved project-map digest are
 recorded in the corresponding immutable build environment in
 [`diamaneos-tools`](https://github.com/DiamaneOS/diamaneos-tools/blob/main/config/build-environment.json).
 
-[`diamaneos.xml`](diamaneos.xml) pins the Fairphone 6 device configuration and
-shared DiamaneOS product configuration. Every revision is an exact commit.
+[`diamaneos.xml`](diamaneos.xml) tracks the Fairphone 6 device configuration and
+shared DiamaneOS product configuration on `android17`, inherited from the
+DiamaneOS remote. Fairphone projects remain pinned to exact upstream commits.
 These are initial integration sources: generated hardware inputs and native
 product-graph validation remain required before building usable images.
 The independently built kernel workspace is not overlaid onto Android source.
@@ -58,10 +59,15 @@ No generic boot-control substitution is declared by this overlay.
 ## Hosting and branches
 
 GitHub's DiamaneOS organization is the authoritative host. Use `android17`
-as this repository's default branch; it pins the current Android product line.
+as this repository's default branch; owned Android projects inherit that branch
+from the DiamaneOS remote.
 There is no parallel `main` manifest. Future Android lines receive their own
 branches and immutable release tags identify accepted snapshots. Branch names
-are discovery entry points; build inputs remain pinned to exact commits.
+are development entry points. Resolve them with `repo manifest -r` and record
+the exact project commits in a new build environment before qualification.
+A later branch advance cannot silently change an existing build identity.
+Release tags retain a manifest with exact project revisions. Kernel workspaces
+use their relevant kernel branch independently of this Android overlay.
 
 Repository remotes and the GitHub default branch must be configured separately
 from changing this overlay. Preserve signed history and independent Git backups.

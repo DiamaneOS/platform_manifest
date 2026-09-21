@@ -4,17 +4,18 @@
 
   The authenticated GrapheneOS release tag supplies the upstream project map.
   Add only real DiamaneOS repositories or deliberate reviewed replacements,
-  each at an immutable commit. Do not repeat upstream release revisions here.
+  using the development branch for owned projects and exact upstream commits.
+  Freeze resolved commits in the build environment and release manifest.
 -->
 <manifest>
   <remote name="diamaneos"
-          fetch="https://github.com/DiamaneOS/" />
+          fetch="https://github.com/DiamaneOS/" revision="android17" />
   <remote name="fairphone"
           fetch="https://gerrit-public.fairphone.software/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="50ca22446d7557706057cf31d4d23b5ee160556d" />
+           remote="diamaneos" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
-           remote="diamaneos" revision="25902929a0cd4de5a30159c8a853b09c82662b81" />
+           remote="diamaneos" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"
            remote="fairphone" revision="7733efc0cce1149ce909e41cdf43164ab7bed8bf" />
