@@ -24,6 +24,15 @@
   <!-- Source HALs used by the minimal FP6 product. -->
   <project name="vendor_qcom_opensource_power" path="vendor/qcom/opensource/power"
            remote="diamaneos" />
+  <!-- Qualcomm display stack built from source (CodeLinaro bases with reviewed patches). -->
+  <project name="hardware_qcom_display" path="hardware/qcom/display"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_libvmmem" path="vendor/qcom/opensource/libvmmem"
+           remote="diamaneos" />
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"
            remote="fairphone" revision="3ccdfb5200c578ce349bcd985e1f95a241bc50d5" />
   <project name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights"
