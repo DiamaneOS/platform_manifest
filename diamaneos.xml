@@ -3,15 +3,13 @@
   Minimal DiamaneOS local-manifest overlay.
 
   The authenticated GrapheneOS release tag supplies the upstream project map.
-  Add only real DiamaneOS repositories or deliberate reviewed replacements,
-  using the development branch for owned projects and exact upstream commits.
+  Every project here is a DiamaneOS fork on the development branch; upstream
+  sources and tracked references are recorded in tools config/forks.json.
   Freeze resolved commits in the build environment and release manifest.
 -->
 <manifest>
   <remote name="diamaneos"
           fetch="https://github.com/DiamaneOS/" revision="android17" />
-  <remote name="fairphone"
-          fetch="https://gerrit-public.fairphone.software/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
            remote="diamaneos" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
@@ -33,14 +31,14 @@
            remote="diamaneos" />
   <project name="vendor_qcom_opensource_libvmmem" path="vendor/qcom/opensource/libvmmem"
            remote="diamaneos" />
-  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"
-           remote="fairphone" revision="3ccdfb5200c578ce349bcd985e1f95a241bc50d5" />
-  <project name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights"
-           remote="fairphone" revision="a5d6338d75992bc6ad748459638e558835848da3" />
-  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator"
-           remote="fairphone" revision="ee288ad6ab45e39069aedb5122f7fa198050f533" />
-  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb"
-           remote="fairphone" revision="7e65693c12f98c3aca9721287dc2c648ea83e65a" />
-  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"
-           remote="fairphone" revision="d8f830f18bbdcf12c3f7d656d77a16beeaed946a" />
+  <project name="vendor_qcom_opensource_thermal-hal" path="vendor/qcom/opensource/thermal-hal"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_lights" path="vendor/qcom/opensource/lights"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_usb" path="vendor/qcom/opensource/usb"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_healthd-ext" path="vendor/qcom/opensource/healthd-ext"
+           remote="diamaneos" />
 </manifest>
