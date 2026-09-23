@@ -31,6 +31,10 @@
            remote="diamaneos" />
   <project name="vendor_qcom_opensource_libvmmem" path="vendor/qcom/opensource/libvmmem"
            remote="diamaneos" />
+  <!-- Qualcomm Wi-Fi HAL from CodeLinaro (Soong-converted) replaces AOSP's copy. -->
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project name="hardware_qcom_wlan" path="hardware/qcom/wlan"
+           remote="diamaneos" />
   <project name="vendor_qcom_opensource_thermal-hal" path="vendor/qcom/opensource/thermal-hal"
            remote="diamaneos" />
   <project name="vendor_qcom_opensource_lights" path="vendor/qcom/opensource/lights"
