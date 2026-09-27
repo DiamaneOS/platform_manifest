@@ -73,4 +73,43 @@
            remote="fairphone" revision="7e65693c12f98c3aca9721287dc2c648ea83e65a" />
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"
            remote="codelinaro" revision="d8f830f18bbdcf12c3f7d656d77a16beeaed946a" />
+  <!-- Tally and Pleat test build (local branch tally): the DiamaneOS forks replace GrapheneOS's
+       projects at android17, which is the GrapheneOS pin until each topic branch is tested and merged.
+       Roadmap: diamaneos-private reviews/OP-APPS-FORKS-2026-09-26/IMPLEMENTATION-ROADMAP.md. -->
+  <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo (steps 3 and 5) -->
+  <remove-project name="platform_frameworks_base" />
+  <project name="platform_frameworks_base" path="frameworks/base"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <!-- DiamaneOS palette style in monet (step 2) -->
+  <remove-project name="platform_frameworks_libs_systemui" />
+  <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <!-- Home, All apps and Recents (step 4) -->
+  <remove-project name="platform_packages_apps_Launcher3" />
+  <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <!-- Search at the bottom, state lamps, hierarchy (step 6) -->
+  <remove-project name="platform_packages_apps_Settings" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <!-- Settings search slot (step 6) -->
+  <remove-project name="platform_packages_apps_SettingsIntelligence" />
+  <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- Material 3 Clock (step 7) -->
+  <remove-project name="platform_packages_apps_DeskClock" />
+  <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- Calculator AC key and smart brackets (step 7) -->
+  <remove-project name="platform_packages_apps_ExactCalculator" />
+  <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"
+           remote="diamaneos" />
+  <!-- Recovery and fastbootd titles (step 7) -->
+  <remove-project name="platform_bootable_recovery" />
+  <project name="platform_bootable_recovery" path="bootable/recovery"
+           remote="diamaneos" groups="pdk" />
+  <!-- Keyboard privacy fixes (register -108; step 7) -->
+  <remove-project name="platform_packages_inputmethods_LatinIME" />
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
+           remote="diamaneos" groups="pdk-fs" />
 </manifest>
