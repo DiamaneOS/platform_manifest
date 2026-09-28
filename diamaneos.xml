@@ -88,6 +88,10 @@
   <remove-project name="platform_packages_apps_ThemePicker" />
   <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
+  <!-- Wallpaper previews that follow the contrast setting (step 2) -->
+  <remove-project name="platform_packages_apps_WallpaperPicker2" />
+  <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2"
+           remote="diamaneos" groups="pdk-fs,sysui-studio" />
   <!-- Home, All apps and Recents (step 4) -->
   <remove-project name="platform_packages_apps_Launcher3" />
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
