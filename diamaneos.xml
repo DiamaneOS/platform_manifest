@@ -85,53 +85,52 @@
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"
            remote="codelinaro" revision="d8f830f18bbdcf12c3f7d656d77a16beeaed946a" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
-       carry the Tally work since 29 September 2026 (owner's decision, before its phone test; updated 30 September and 1 October).
-       Roadmap: diamaneos-private reviews/OP-APPS-FORKS-2026-09-26/IMPLEMENTATION-ROADMAP.md. -->
-  <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo (steps 3 and 5) -->
+       carry the Tally work since 29 September 2026. -->
+  <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <remove-project name="platform_frameworks_base" />
   <project name="platform_frameworks_base" path="frameworks/base"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
-  <!-- DiamaneOS palette style in monet (step 2) -->
+  <!-- DiamaneOS palette style in monet -->
   <remove-project name="platform_frameworks_libs_systemui" />
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
-  <!-- Wallpaper & style previews that match the applied palette (step 2) -->
+  <!-- Wallpaper & style previews that match the applied palette -->
   <remove-project name="platform_packages_apps_ThemePicker" />
   <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
-  <!-- Wallpaper previews that follow the contrast setting (step 2) -->
+  <!-- Wallpaper previews that follow the contrast setting -->
   <remove-project name="platform_packages_apps_WallpaperPicker2" />
   <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
-  <!-- Home, All apps and Recents (step 4) -->
+  <!-- Home, All apps and Recents -->
   <remove-project name="platform_packages_apps_Launcher3" />
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
-  <!-- Search at the bottom, state lamps, hierarchy (step 6) -->
+  <!-- Search at the bottom, state lamps, hierarchy -->
   <remove-project name="platform_packages_apps_Settings" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
-  <!-- Settings search slot (step 6) -->
+  <!-- Settings search slot -->
   <remove-project name="platform_packages_apps_SettingsIntelligence" />
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
-  <!-- Material 3 Clock (step 7) -->
+  <!-- Material 3 Clock -->
   <remove-project name="platform_packages_apps_DeskClock" />
   <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock"
            remote="diamaneos" groups="pdk-fs" />
-  <!-- Calculator AC key and smart brackets (step 7) -->
+  <!-- Calculator AC key and smart brackets -->
   <remove-project name="platform_packages_apps_ExactCalculator" />
   <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"
            remote="diamaneos" />
-  <!-- Recovery and fastbootd titles (step 7) -->
+  <!-- Recovery and fastbootd titles -->
   <remove-project name="platform_bootable_recovery" />
   <project name="platform_bootable_recovery" path="bootable/recovery"
            remote="diamaneos" groups="pdk" />
-  <!-- Files: Get info takes the system palette like the other screens (UI test B-25) -->
+  <!-- Files: Get info takes the system palette like the other screens -->
   <remove-project name="platform_packages_apps_DocumentsUI" />
   <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
-  <!-- Keyboard privacy fixes (register -108; step 7) -->
+  <!-- Keyboard privacy fixes (register -108) -->
   <remove-project name="platform_packages_inputmethods_LatinIME" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
            remote="diamaneos" groups="pdk-fs" />
