@@ -138,4 +138,40 @@
   <remove-project name="platform_packages_inputmethods_LatinIME" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
            remote="diamaneos" groups="pdk-fs" />
+  <!-- Kernels for other devices, unused by the FP6 build. The 6.6 and 6.12
+       kernel prebuilts and the trusty 6.12 modules stay: microdroid uses them. -->
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device_google_akita-kernels_6.1" />
+  <remove-project name="device_google_bluejay-kernels_6.1" />
+  <remove-project name="device_google_caimito-kernels_6.1" />
+  <remove-project name="device_google_comet-kernels_6.1" />
+  <remove-project name="device_google_felix-kernels_6.1" />
+  <remove-project name="device_google_laguna-kernels_6.6" />
+  <remove-project name="device_google_lynx-kernels_6.1" />
+  <remove-project name="device_google_pantah-kernels_6.1" />
+  <remove-project name="device_google_raviole-kernels_6.1" />
+  <remove-project name="device_google_shusky-kernels_6.1" />
+  <remove-project name="device_google_stallion-kernels_6.1" />
+  <remove-project name="device_google_tangorpro-kernels_6.1" />
+  <remove-project name="device_google_tegu-kernels_6.1" />
+  <remove-project name="device/linaro/dragonboard-kernel" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="kernel/prebuilts/6.1/arm64" />
+  <remove-project name="kernel/prebuilts/6.1/x86-64" />
+  <remove-project name="kernel/prebuilts/6.18/arm64" />
+  <remove-project name="kernel/prebuilts/6.18/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/trusty/6.6/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.18/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" />
+  <remove-project name="kernel/prebuilts/mainline/arm64" />
+  <remove-project name="kernel/prebuilts/mainline/x86-64" />
+  <remove-project name="platform_prebuilts_qemu-kernel" />
 </manifest>
