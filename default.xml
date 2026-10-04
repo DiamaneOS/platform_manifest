@@ -9,7 +9,6 @@
   <project name="adevtool" path="vendor/adevtool" remote="grapheneos" revision="17df3b79a73e67ad68387b35c7d41c85e1d8103c" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="branding" remote="grapheneos" revision="7149017888121bcba543f57b41e032a8c45fca62" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="device/amlogic/yukawa" revision="cfa1b7f9bf57241b719ea2b1ddcfdd76f26079b9" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,pdk,yukawa"/>
-  <project name="device/amlogic/yukawa-kernel" revision="ff822d1ec33dc9a8225d34a1c576f8af26fdb0fd" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,pdk,yukawa" clone-depth="2"/>
   <project name="device/generic/arm64" revision="71380158d818de918338e34a9cb72316fe3cfa4e" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="device/generic/armv7-a-neon" revision="b7153cb57f487ce183df8a3719248242765dbb31" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="device/generic/art" revision="d9c26558defdcdf2907c2abde9a9320dd404a7a9" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
@@ -25,49 +24,17 @@
   <project name="device/google/sdv_display_safety" revision="0971a46741bd2931c8c506e0afe950348af7c1d4" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,swcar" clone-depth="1"/>
   <project name="device/google_car" revision="448cd25476b0346ab64f20fe2a58f0167316ff80" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="device/linaro/dragonboard" revision="57c0fe532e79cfbcdc5551def280ada2ee88d3c6" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,dragonboard,pdk"/>
-  <project name="device/linaro/dragonboard-kernel" revision="2b7ee1dcc264c6c3ca7bdf7f44ac0b2b47d8c95f" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,dragonboard,pdk" clone-depth="1"/>
   <project name="device/linaro/hikey" revision="5ad65c65ddace8c02b156c9cf70e71db7c609cff" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,hikey,pdk"/>
-  <project name="device/linaro/hikey-kernel" revision="f836f3465d48dbb69412e22d5cb1ac3f69808971" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="device,hikey,pdk" clone-depth="1"/>
   <project name="device/sample" revision="035858697891c2e1079255ef33656663618037a1" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="device_common" path="device/common" remote="grapheneos" revision="1f5ba2671e4b04e3bd8899b3df2c5e30a894b35c" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,pdk-cw-fs"/>
   <project name="device_generic_goldfish" path="device/generic/goldfish" remote="grapheneos" revision="1facfe03b3519c3413a51d2ea56400bbade0b4c3" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="device_google_akita-kernels_6.1" path="device/google/akita-kernels/6.1" remote="grapheneos" revision="7a3388db694cbc2b4b04fda2d2ccad40ba68c092" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_bluejay-kernels_6.1" path="device/google/bluejay-kernels/6.1" remote="grapheneos" revision="56af7b93a60ef8b10b556fe6d64add2bae75d8b1" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_caimito-kernels_6.1" path="device/google/caimito-kernels/6.1" remote="grapheneos" revision="291f2deee97e57804d6543715724b70d7bc5b754" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_comet-kernels_6.1" path="device/google/comet-kernels/6.1" remote="grapheneos" revision="f569f9229d7ff5ac28badd40f7c969db951e2081" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_felix-kernels_6.1" path="device/google/felix-kernels/6.1" remote="grapheneos" revision="d63814435e5bcd79d229ab3854f6519acf381930" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_laguna-kernels_6.6" path="device/google/laguna-kernels/6.6" remote="grapheneos" revision="275dad3c1f144f6bdd6d2c1ec22eccbfbd467da9" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_lynx-kernels_6.1" path="device/google/lynx-kernels/6.1" remote="grapheneos" revision="580618fa93b787a8ae075834c530ad62e8e2a2ea" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_pantah-kernels_6.1" path="device/google/pantah-kernels/6.1" remote="grapheneos" revision="2be4d1db4e292ddbe13be98fb6436bbcf1c55890" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_raviole-kernels_6.1" path="device/google/raviole-kernels/6.1" remote="grapheneos" revision="a49ac7fe2b64e36b64afd1cd53d147b4d547fbd3" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_shusky-kernels_6.1" path="device/google/shusky-kernels/6.1" remote="grapheneos" revision="852664007f4e3955f618e448e05b10f3752607b4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_stallion-kernels_6.1" path="device/google/stallion-kernels/6.1" remote="grapheneos" revision="1739d651322b856927a8c05570e682ff22dc4654" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_tangorpro-kernels_6.1" path="device/google/tangorpro-kernels/6.1" remote="grapheneos" revision="cde5de1efcf0667fdf5dbdb98fc45ed43f2da412" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="device_google_tegu-kernels_6.1" path="device/google/tegu-kernels/6.1" remote="grapheneos" revision="6891daeee1c03a9819982ff80a622a1904c19bed" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="hardened_malloc" path="external/hardened_malloc" remote="grapheneos" revision="c28cd930b0d059ef7704fc816e9d6f367f93fcdd" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="kernel/configs" revision="553fd8d034110b4a63834e676533f5cc4c5e0089" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,vts"/>
-  <project name="kernel/prebuilts/6.1/arm64" revision="bfb3baed33d4497416d6f77fc015d71f726b838d" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/6.1/x86-64" path="kernel/prebuilts/6.1/x86_64" revision="f1a9310e363d905f5587fa58925a1059af58cc01" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/prebuilts/6.12/arm64" revision="318576752b27af3d328e6deb5e6aa29b08f762c9" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/prebuilts/6.12/x86-64" path="kernel/prebuilts/6.12/x86_64" revision="cb8e8ee3babf4a27b742f59dcb92f59cf186299c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/6.18/arm64" revision="6b2d4fe8c0c7ffe9e72f64dbc9811d6a8d4d2907" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/6.18/x86-64" path="kernel/prebuilts/6.18/x86_64" revision="23cf6401297ea7e14f6b2365067f585f9143e51f" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/prebuilts/6.6/arm64" revision="350899556b7cae26d5981c7055759428aef7598d" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/prebuilts/6.6/x86-64" path="kernel/prebuilts/6.6/x86_64" revision="b87e9b115da5dd1ed94b423657279c766057d5b3" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/prebuilts/common-modules/trusty/6.12/arm64" revision="36b655a113a38fe26146dac298262ea28878f9a2" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/trusty/6.6/arm64" revision="3f7053bdf0a7147e001e69a1d61d9ce679404289" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" revision="5c2c81e8c957851c06c5e8696105c796d885bed0" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" revision="c0d95b0f0520cdb63653802d6a4cfd51717c09d7" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" revision="e6673fcbd05e63e6fcc2c2d2cf33246108b73b0c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" revision="4463c45163d93baf9479744641a03961f58c1467" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.18/arm64" revision="659b5e0fdcbb92fe1dd4a930fc861e744bd3f157" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" revision="8dcdc633a80d0a37f549fdf8fd1c48f2317f76fa" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" revision="3aa5ec86b45a7eda3c85cd7e97ef2845d1b95b7f" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" revision="bd4fabf3d97e12cedebb1beafddc5116e3da5fde" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" revision="c1b6f17450d64bb1c368b48aae97055563e5043e" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" revision="8686f19c255c36095c0dcf087901a5a8f7a00750" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/mainline/arm64" revision="49cdfc22db6be7a55ae951e522d5ecadf6293a90" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
-  <project name="kernel/prebuilts/mainline/x86-64" path="kernel/prebuilts/mainline/x86_64" revision="51a4241eb8c63ce034bfcd798d8dff8eaa8325d0" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="kernel/tests" revision="bbc501af326dc8351cd6a6fa9efadcbce649d46f" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,vts"/>
   <project name="platform/bootable/deprecated-ota" path="bootable/deprecated-ota" revision="d9145a6f8e393e5925d43c402da98da5dd6dff76" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-arsp-ag-sot,pdk-arsp-common,pdk-cw"/>
   <project name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="b8c945e55a2e47eaa698f5f916c004bd83bcb811" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,vts"/>
@@ -145,6 +112,7 @@
   <project name="platform/external/chromium-web-tests" path="external/chromium-web-tests" revision="9e6255ebc1eeff6dc5b5fac397bf0dace769c1a6" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/chromiumos-config" path="external/chromiumos-config" revision="0f9ee62b2480d7ffa81c1584407813e7a6d930ca" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk" clone-depth="1"/>
   <project name="platform/external/clang" path="external/clang" revision="bdc4d062dc4550869e0825da19fe8fa720db860a" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
+  <project name="platform_external_cldr" path="external/cldr" remote="grapheneos" revision="aae28845fcf06dfcd697fd7fb05eac1a0cac2352" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform/external/clpeak" path="external/clpeak" revision="7566a8c770341e26c0cdc07b95698ae14391b34b" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/clspv" path="external/clspv" revision="47d91f252d9e927fa8e7865133db4f868304c6f0" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/clvk" path="external/clvk" revision="1baa08de7eb3757e563444366a05b51758a79a02" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
@@ -255,6 +223,7 @@
   <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="487eaf7776fa0733d9835747032288ab0b549a70" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/iamf_tools" path="external/iamf_tools" revision="686f2a5d576144e52d9bae9e86d2be9b09a31aad" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/icing" path="external/icing" revision="3baefcdf2131527429d780b2f89bb2b845e44bb6" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
+  <project name="platform_external_icu" path="external/icu" remote="grapheneos" revision="e8af5eabcfc33009ee437f3006a6b40c9f686f55" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk" clone-depth="1"/>
   <project name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools" revision="4134b84e0361e82dadcabca302626c4d48c12cc3" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/image_io" path="external/image_io" revision="581886c43a33d47101cae26c447ed7be07a8b626" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/external/ims" path="external/ims" revision="e0534954b785ee366e228ca96ae05f86dfcc7feb" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
@@ -618,6 +587,7 @@
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="22f2506e585270da53cb910f6fda92395f6550c1" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="4080160ebeff7fef5d5ce7062b571830c8cc937e" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/frameworks/ex" path="frameworks/ex" revision="4080c2d3e5a6387e0d064ce5744d56fc6a7c9bb7" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-fs,pdk-fs"/>
+  <project name="platform_frameworks_hardware_interfaces" path="frameworks/hardware/interfaces" remote="grapheneos" revision="458b97268ecfa0c1ee473e76243abdb1613dffeb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
   <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="0e32f7696581815e283c3ea277692a638cdce628" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform/frameworks/libs/binary_translation" path="frameworks/libs/binary_translation" revision="1290e88c60304844bd6e1c0778241ca249d64019" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/frameworks/libs/gsma_services" path="frameworks/libs/gsma_services" revision="a4dfac7fa31dac63e84149dfa563050c397889a4" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
@@ -656,7 +626,6 @@
   <project name="platform/hardware/nxp/nxp_mcu_loader" path="hardware/nxp/nxp_mcu_loader" revision="c3e3b459ff02a90fa307c2748c020df21659b3e0" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/hardware/nxp/uwb" path="hardware/nxp/uwb" revision="635ca3e04cec7ce93dd969397c46fa2d02857a90" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-arsp-ag-sot,pdk-arsp-common"/>
   <project name="platform/hardware/nxp/weaver" path="hardware/nxp/weaver" revision="c6a2c5f729b1b0f50d2351b368166924ab73f3bc" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
-  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="b467db6eb6e31cc160a2600d0c8cb4e20c52f3fa" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-qcom,qcom_wlan"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="35d736e2410f8b49e3b6f3a5649dc9e9d24ccd3c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/hardware/samsung/nfc" path="hardware/samsung/nfc" revision="493fc8ae26d9ad3e6ae7619db7daa1f67b0d2809" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/hardware/sdv/interfaces" path="hardware/sdv/interfaces" revision="3682a3968292032a31d74c450380aa81d5e547ec" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,swcar"/>
@@ -674,13 +643,11 @@
   <project name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="041dad88c3f928045fb03121bafcb927f906e431" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-tvc,pdk-fs"/>
   <project name="platform/packages/apps/Car/SystemUI" path="packages/apps/Car/SystemUI" revision="8dd6b4135ad531ae26adc96f99a4f6f2eb693138" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-tvc,pdk-fs"/>
   <project name="platform/packages/apps/Car/systemlibs" path="packages/apps/Car/systemlibs" revision="50c8ca46d83136931d49d1c82ad9029ca8354dc1" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-tvc,pdk-fs"/>
-  <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="c9f82c3de8293731d4230758dc258916c12335a6" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="3667349d355e2e064cb56bf4a8faf5fd5525db87" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="9bc2a6a4917afd2eaa627dc4aa981c3a918dcbed" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/packages/apps/DeviceDiagnostics" path="packages/apps/DeviceDiagnostics" revision="08a7fc7b7d5366b8fabf5e6a11d769d7f5c3ae4c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/packages/apps/EyeDropper" path="packages/apps/EyeDropper" revision="225af0c6253316198738699de9041d1f28d0df44" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="2e3e07363b649b1c86543bd9c4735a525952dba2" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
-  <project name="platform/packages/apps/ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement" revision="fc19d81ab2f3cc7903766ff67cc47b2d6722daa6" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="3f0e2b0c85f1f1939f83bab71271935c8cb2f6f8" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
   <project name="platform/packages/apps/Login" path="packages/apps/Login" revision="11395aad398f7a252f24c72b7cc7d64c11663240" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="dcb981579cbbe74a817ecbaf97e7b924be0cdaa0" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk-fs"/>
@@ -867,6 +834,7 @@
   <project name="platform/system/software_defined_vehicle/vsidl" path="system/software_defined_vehicle/vsidl" revision="9d6bfa55d7448844c36af7c5aeadb3e981b6c995" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk,swcar"/>
   <project name="platform/system/teeui" path="system/teeui" revision="e3011285b9883a300491d7bc45a12581e281287c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="19d4b13af4613002e7a80681acfa2c53f12271f2" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
+  <project name="platform_system_timezone" path="system/timezone" remote="grapheneos" revision="9d9754d450b1bb06a73ca3e2befb0e1d97a3a123" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="5d0e05e6535fea94a674a359102bdd42944714f4" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/system/tools/mkbootimg" path="system/tools/mkbootimg" revision="4a27dd13adf9846e12d585d6fe99a375ebb58396" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
   <project name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="deead2d06508faeca98c236feea7e59bb4c43c8c" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="pdk"/>
@@ -925,15 +893,6 @@
   <project name="platform/tools/trebuchet" path="tools/trebuchet" revision="fb475730e55c847362a51b1978b16a633267deb9" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" groups="cts,pdk,pdk-cw-fs,pdk-fs,tools"/>
   <project name="platform_art" path="art" remote="grapheneos" revision="6a459adafb78451393b2bfb45e805934df2a3d6b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_bionic" path="bionic" remote="grapheneos" revision="e93ce48518dc0fba69878cb4ace37a3525862cbe" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_bootable_recovery" path="bootable/recovery" remote="grapheneos" revision="420124283bb1ecfca9e5ca5eac0e0ca28ebec427" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_build" path="build/make" remote="grapheneos" revision="b0f697df8cc9519408ca0a404e918cd51bde0735" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio">
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
-    <linkfile src="core" dest="build/core"/>
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
-    <linkfile src="target" dest="build/target"/>
-    <linkfile src="tools" dest="build/tools"/>
-  </project>
   <project name="platform_build_release" path="build/release" remote="grapheneos" revision="0d3e510c9a11b9376b9c155f3425a64182798c22" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio,tradefed"/>
   <project name="platform_build_soong" path="build/soong" remote="grapheneos" revision="250710f7f87acfbb8e3c517d90abde8b4a08fe1e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio,tradefed">
     <linkfile src="root.bp" dest="Android.bp"/>
@@ -950,11 +909,9 @@
   <project name="platform_external_Messaging" path="external/Messaging" remote="grapheneos" revision="041f08bc0d81a45cd59194bfc974a44edb204ca9" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_PdfViewer" path="external/PdfViewer" remote="grapheneos" revision="20956d0128962a35414280b1a7dc4ab6527f2e4d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_SpeechServices" path="external/SpeechServices" remote="grapheneos-gitlab" revision="c63d8d3ddc37a582ddda3e0325e63c2d4b573b24" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="platform_external_cldr" path="external/cldr" remote="grapheneos" revision="aae28845fcf06dfcd697fd7fb05eac1a0cac2352" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_external_conscrypt" path="external/conscrypt" remote="grapheneos" revision="f77e70e5d9c7daa3347233e186c8fd4244e6406e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_external_exfatprogs" path="external/exfatprogs" remote="grapheneos" revision="5931500ae2467db1f5236bdb2a197156853a34c4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_external_freetype" path="external/freetype" remote="grapheneos" revision="542539f6c9f3de302e4137e201a94d257938ae0c" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_external_icu" path="external/icu" remote="grapheneos" revision="e8af5eabcfc33009ee437f3006a6b40c9f686f55" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk" clone-depth="1"/>
   <project name="platform_external_libcupsfilters" path="external/libcupsfilters" remote="grapheneos" revision="48c43a202a6fe8de6e213c045293dbb0a6eca458" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_external_libhevc" path="external/libhevc" remote="grapheneos" revision="2c17661fa09d8409583640a3c7bac23979b6d967" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_external_libjxl" path="external/libjxl" remote="grapheneos" revision="5dc34355d839e927be77af04e4ab2adf42ac7854" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -964,13 +921,7 @@
   <project name="platform_external_talkback" path="external/talkback" remote="grapheneos" revision="e1a1a93cc7a5095f8f00d1b31429464ab4c76f0f" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_vanadium" path="external/vanadium" remote="grapheneos-gitlab" revision="24a782c9f23661b8acc665a93b9b8e9d38ab0d0d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="grapheneos" revision="baab9684e68816755cd784291272d31bd5ddcfbd" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_frameworks_av" path="frameworks/av" remote="grapheneos" revision="7a46fb37eae0e57496e4242007449ca56c957ce7" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
-  <project name="platform_frameworks_base" path="frameworks/base" remote="grapheneos" revision="84183aff99be5e156dc0446a6fa2d4a7150f4bc3" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
-  <project name="platform_frameworks_hardware_interfaces" path="frameworks/hardware/interfaces" remote="grapheneos" revision="458b97268ecfa0c1ee473e76243abdb1613dffeb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
-  <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="grapheneos" revision="2b48d4c9eeaf8bfaa443d8ac7d155995a4d4277f" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
-  <project name="platform_frameworks_native" path="frameworks/native" remote="grapheneos" revision="1c83ac6ae533c74ecb0486369c0d2f9e79783b3d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="grapheneos" revision="72711d446125f78f49ad8f4fa79bf017a8c5cae4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
-  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="grapheneos" revision="02e1bf0ea9fe5d2cdb3cf954cc1353a935821ebc" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
   <project name="platform_hardware_interfaces" path="hardware/interfaces" remote="grapheneos" revision="10f50d727929257755d4bc3fb59758dc10e7a37b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
   <project name="platform_hardware_st_nfc" path="hardware/st/nfc" remote="grapheneos" revision="43e2c196a74e3d93a60b6435f8a582100103565c" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_libcore" path="libcore" remote="grapheneos" revision="ffe148abedb69214b5affa5820229d12a8227b62" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,sysui-studio"/>
@@ -980,30 +931,20 @@
   <project name="platform_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="grapheneos" revision="59d96c75e854cc1d0381690206df12a9525f3815" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="grapheneos" revision="d956e03fc54761d6cba19cccb28175a2b9ff57b0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_ContactsPicker" path="packages/apps/ContactsPicker" remote="grapheneos" revision="6e07c979010ac6f5d913848533f34186c1efa098" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="grapheneos" revision="7e04cd4bec8c1d9e1579eaa5b3089fe6042a0cb8" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="grapheneos" revision="a4e1839e755c0e5c1483f64632e5a8507e5d53cf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="grapheneos" revision="ac4670682dd0df3a9798dfb346c57f163d42f7fc" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="grapheneos" revision="15cd49cc3c6ee83329b4f76ac5b261f201eaf7bc" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="grapheneos" revision="f5518d09c6e6953eaba6d0c7c23d5a2d766b6525" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="grapheneos" revision="f5b3c7ccc8fb327164d3f860298133c5a8f65b1d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="grapheneos" revision="47accce386f2abdc84e87c05b5587be6e0b0854f" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-tvc,pdk-fs,sysui-studio"/>
   <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer" remote="grapheneos" revision="75333e999c96d79c5b679660cd7547628d95af4d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation" remote="grapheneos" revision="474472e844069392236782df2568db1f404945d0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="grapheneos" revision="e5c0d9dd672123864c3cfc7e5e763dfbf133bf8b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-tvc,pdk-fs,sysui-studio"/>
-  <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="grapheneos" revision="bc8b0ee61b906352c278d375423351a3d965b63e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="grapheneos" revision="3982cfc3536620c17b2ec5c3494af0fb2a58a633" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="grapheneos" revision="870a412786fad48d8bf2696483583b67871ec5d1" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs,sysui-studio"/>
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="grapheneos" revision="52c34a55bd26f7856f9141d7e4237397084d6936" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="grapheneos" revision="1b6462b0c01b7c9388fcedcdb6a91317ae5f028d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs,sysui-studio"/>
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="grapheneos" revision="856f017bb2c78d3a5cfa6c29e7f29ab86e1e3302" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="grapheneos" revision="ff1b0197275bf47b415c3d6cbd518583fe7c5ebf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_modules_ConfigInfrastructure" path="packages/modules/ConfigInfrastructure" remote="grapheneos" revision="2515bd1790e30597527ff83ac00ae0e7563da79b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="grapheneos" revision="6ab5be47d49a3f93d424f195958dfaadec8a906c" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="grapheneos" revision="215bd613910d77fbf58e55d4b8ec73f1a3713373" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_HealthFitness" path="packages/modules/HealthFitness" remote="grapheneos" revision="e42a6133a71038d47b669fe59871f3e84e5aa17a" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack" remote="grapheneos" revision="22adb6f742fdf27f2a4a2d42db06be0e490f54e0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
@@ -1014,7 +955,6 @@
   <project name="platform_packages_modules_Telephony" path="packages/modules/Telephony" remote="grapheneos" revision="dae38649a0141d5c1400553c654f31e74ec196aa" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Uwb" path="packages/modules/Uwb" remote="grapheneos" revision="4f012a602df3fe587476b15cdd56094a779bf158" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Virtualization" path="packages/modules/Virtualization" remote="grapheneos" revision="2adc78f4f364322535d773e00aa79464d95000ed" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi" remote="grapheneos" revision="2d471d603662033998ccb9112e8f44f0dcef8fa0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_adb" path="packages/modules/adb" remote="grapheneos" revision="c10299c6075900ba731ef72e5ffe4b1cf7b69c42" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" remote="grapheneos" revision="7b2672db7d5e4e1f0e446f44ad3438cf900bd1d6" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="grapheneos" revision="972e149f08f13848a3638a7d30b586732739d621" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
@@ -1024,7 +964,6 @@
   <project name="platform_packages_services_Mms" path="packages/services/Mms" remote="grapheneos" revision="883efe1fe25b836704c52859cbb5a2e5f3763e23" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="grapheneos" revision="21585d350141ccae06e0a85703290f1e06730831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="grapheneos" revision="7b08bec60533a9905f687b69be9ace7d346d0023" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel" remote="grapheneos" revision="ac712f3a5cce1b1a89eeac19a659b18a99f90c8e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk" clone-depth="1"/>
   <project name="platform_system_ca-certificates" path="system/ca-certificates" remote="grapheneos" revision="14ad6bb8aa3bc482a8dc147b15d8bb7a4110db15" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_core" path="system/core" remote="grapheneos" revision="322ff5129d865a5e8d958667e6c63ac943449493" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_extras" path="system/extras" remote="grapheneos" revision="5b8e9ee4f15faa60218b08bb09abae41e1f6bd0e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1034,7 +973,6 @@
   <project name="platform_system_logging" path="system/logging" remote="grapheneos" revision="cb7d51609c1bfa596b6ccedd3ef5f4153fcde80d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_netd" path="system/netd" remote="grapheneos" revision="d57ea8dce505948725389d34806af1b5e9998749" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="grapheneos" revision="5e359dcf9ae863a593e9055a85e1657c87c4cb18" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_system_timezone" path="system/timezone" remote="grapheneos" revision="9d9754d450b1bb06a73ca3e2befb0e1d97a3a123" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_tools_aidl" path="system/tools/aidl" remote="grapheneos" revision="6e43dfbfa750163bedd259a79a9de4558c1b3d56" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_update_engine" path="system/update_engine" remote="grapheneos" revision="79f478a4f89e701e85fa15dec340bf445342abbd" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_vold" path="system/vold" remote="grapheneos" revision="a47ab7c0d4be9e89459a268eab314cd3c758ec77" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1082,4 +1020,126 @@
   <superproject name="platform/superproject" revision="android-17.0.0_r1"/>
   
   <contactinfo bugurl="go/repo-bug"/>
+
+  <!-- DiamaneOS overlay (forks, own projects and pinned upstream sources). -->
+  <remote name="diamaneos"
+          fetch="https://github.com/DiamaneOS/" revision="android17" />
+  <!-- Upstreams of repositories used unmodified, pinned to exact commits. -->
+  <remote name="codelinaro"
+          fetch="https://git.codelinaro.org/clo/la/" />
+  <remote name="codelinaro-le"
+          fetch="https://git.codelinaro.org/clo/le/" />
+  <remote name="fairphone"
+          fetch="https://gerrit-public.fairphone.software/" />
+  <project name="device_fairphone_FP6" path="device/fairphone/FP6"
+           remote="diamaneos" />
+  <project name="vendor_diamaneos" path="vendor/diamaneos"
+           remote="diamaneos" />
+  <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
+       the authenticated vendor selection. AML is not selected. -->
+  <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
+           remote="diamaneos" />
+  <!-- Maintained carrier service with optional device configuration data. -->
+  <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig"
+           remote="diamaneos" />
+  <!-- Preserve carrier HTTPS provisioning without the inherited Google push SDKs. -->
+  <project name="platform_packages_apps_ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement"
+           remote="diamaneos" />
+  <!-- Reserve vendor voice-session control for trusted services and the signed
+       call-audio bridge; ordinary MODIFY_AUDIO_SETTINGS is insufficient. -->
+  <project name="platform_frameworks_av" path="frameworks/av"
+           remote="diamaneos" groups="pdk,sysui-studio" />
+  <!-- Required published boot-control and GPT/UFS implementation. -->
+  <project name="hardware_qcom_bootctrl" path="hardware/qcom/bootctrl"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext"
+           remote="diamaneos" />
+  <!-- Source HALs used by the minimal FP6 product. -->
+  <project name="vendor_qcom_opensource_power" path="vendor/qcom/opensource/power"
+           remote="diamaneos" />
+  <!-- Qualcomm display stack built from source (CodeLinaro bases with reviewed patches). -->
+  <project name="hardware_qcom_display" path="hardware/qcom/display"
+           remote="diamaneos" />
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"
+           remote="codelinaro" revision="0bd3aa234cb00ec16b5c6092e98ce622ae1e86eb" />
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces"
+           remote="codelinaro" revision="357f62518548d522e47bff78b825321bf8f15f00" />
+  <project name="platform/system/memory/libvmmem" path="vendor/qcom/opensource/libvmmem"
+           remote="codelinaro-le" revision="543447bf4b8197d58258729f155b91c750a0247e" />
+  <!-- Telephony framework: batch the vendor RIL's network-state polls while idle. -->
+  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony"
+           remote="diamaneos" groups="pdk,sysui-studio" />
+  <!-- Preserve address-state changes through framework callback comparisons. -->
+  <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Keep the device's boot header arguments when release tools rebuild images. -->
+  <project name="platform_build" path="build/make"
+           remote="diamaneos" groups="pdk,sysui-studio">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+    <linkfile src="core" dest="build/core"/>
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+    <linkfile src="target" dest="build/target"/>
+    <linkfile src="tools" dest="build/tools"/>
+  </project>
+  <!-- Vendor-specific sensors without their own permission need the Sensors permission. -->
+  <project name="platform_frameworks_native" path="frameworks/native"
+           remote="diamaneos" groups="pdk,sysui-studio" />
+  <!-- Qualcomm Wi-Fi HAL from CodeLinaro (Soong-converted) replaces AOSP's copy. -->
+  <project name="hardware_qcom_wlan" path="hardware/qcom/wlan"
+           remote="diamaneos" />
+  <!-- Read-only primary Wi-Fi association for the isolated radio observer. -->
+  <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi"
+           remote="diamaneos" revision="android17" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"
+           remote="fairphone" revision="3ccdfb5200c578ce349bcd985e1f95a241bc50d5" />
+  <project name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights"
+           remote="codelinaro" revision="a5d6338d75992bc6ad748459638e558835848da3" />
+  <project name="vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator"
+           remote="diamaneos" />
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb"
+           remote="fairphone" revision="7e65693c12f98c3aca9721287dc2c648ea83e65a" />
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"
+           remote="codelinaro" revision="d8f830f18bbdcf12c3f7d656d77a16beeaed946a" />
+  <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
+       carry the Tally work since 29 September 2026. -->
+  <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
+  <project name="platform_frameworks_base" path="frameworks/base"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <!-- DiamaneOS palette style in monet -->
+  <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <!-- Wallpaper & style previews that match the applied palette -->
+  <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
+           remote="diamaneos" groups="pdk-fs,sysui-studio" />
+  <!-- Wallpaper previews that follow the contrast setting -->
+  <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2"
+           remote="diamaneos" groups="pdk-fs,sysui-studio" />
+  <!-- Home, All apps and Recents -->
+  <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <!-- Search at the bottom, state lamps, hierarchy -->
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <!-- Settings search slot -->
+  <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- Material 3 Clock -->
+  <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- Calculator AC key and smart brackets -->
+  <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"
+           remote="diamaneos" />
+  <!-- Recovery and fastbootd titles -->
+  <project name="platform_bootable_recovery" path="bootable/recovery"
+           remote="diamaneos" groups="pdk" />
+  <!-- Files: Get info takes the system palette like the other screens -->
+  <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Keyboard privacy fixes (register -108) -->
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
+  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
 </manifest>
