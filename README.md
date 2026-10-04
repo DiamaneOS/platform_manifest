@@ -6,9 +6,10 @@ This repository is GrapheneOS's manifest with DiamaneOS's changes on top:
 GrapheneOS and AOSP projects stay at the exact revisions of the GrapheneOS
 release it is based on (2026091000, whose signed tag is verified when it is
 merged here); DiamaneOS forks and DiamaneOS projects follow their `android17`
-branches; Fairphone and CodeLinaro projects are pinned to exact commits; kernels
-for other devices are left out. It also brings in the published FP6 kernel
-prebuilts (`device/fairphone/FP6-kernel`) and the build tools (`tools/diamaneos`).
+branches; Fairphone, CodeLinaro and linux-msm projects are pinned to exact
+commits; kernels for other devices are left out. It also brings in the published
+FP6 kernel prebuilts (`device/fairphone/FP6-kernel`) and the build tools
+(`tools/diamaneos`).
 
 ## Get the source
 
