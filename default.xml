@@ -1056,9 +1056,21 @@
            remote="diamaneos" />
   <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext"
            remote="diamaneos" />
-  <!-- Source HALs used by the minimal FP6 product. -->
+  <!-- CodeLinaro power HAL; no longer built (the power HAL is libperfmgr below). -->
   <project name="vendor_qcom_opensource_power" path="vendor/qcom/opensource/power"
            remote="diamaneos" />
+  <!-- Power HAL: LineageOS's libperfmgr, used unmodified through DiamaneOS
+       mirrors pinned to exact commits (lineage-24.0). hardware/google/pixel
+       provides libperfmgr. AOSP's nos host libraries, which GrapheneOS leaves
+       out, only let Soong resolve that project's unused fastboot and recovery
+       modules. -->
+  <project name="hardware_lineage_interfaces" path="hardware/lineage/interfaces"
+           remote="diamaneos" revision="8e74530186f555d7f4802a579e901535d9f0968f" />
+  <project name="hardware_google_pixel" path="hardware/google/pixel"
+           remote="diamaneos" revision="8bd3c71cf2be40cfbe8f5a4b9bf5574ee9fbc624" />
+  <project name="platform/external/nos/host/generic" path="external/nos/host/generic"
+           remote="aosp" revision="fd50a4667c9500729f9b76afc294b203f48ad0d9"
+           upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" />
   <!-- Qualcomm display stack built from source (CodeLinaro bases with reviewed patches). -->
   <project name="hardware_qcom_display" path="hardware/qcom/display"
            remote="diamaneos" />
