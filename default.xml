@@ -1055,9 +1055,6 @@
            remote="diamaneos" />
   <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext"
            remote="diamaneos" />
-  <!-- CodeLinaro power HAL; no longer built (the power HAL is libperfmgr below). -->
-  <project name="vendor_qcom_opensource_power" path="vendor/qcom/opensource/power"
-           remote="diamaneos" />
   <!-- Power HAL: LineageOS's libperfmgr, used unmodified through DiamaneOS
        mirrors pinned to exact commits (lineage-24.0). hardware/google/pixel
        provides libperfmgr. AOSP's nos host libraries, which GrapheneOS leaves
