@@ -935,7 +935,6 @@
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="grapheneos" revision="f5518d09c6e6953eaba6d0c7c23d5a2d766b6525" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="grapheneos" revision="f5b3c7ccc8fb327164d3f860298133c5a8f65b1d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer" remote="grapheneos" revision="75333e999c96d79c5b679660cd7547628d95af4d" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation" remote="grapheneos" revision="474472e844069392236782df2568db1f404945d0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="grapheneos" revision="3982cfc3536620c17b2ec5c3494af0fb2a58a633" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
@@ -1143,6 +1142,9 @@
   <!-- Home, All apps and Recents -->
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <!-- System error reports: the Report button opens the DiamaneOS issue tracker -->
+  <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer"
+           remote="diamaneos" groups="pdk-fs" />
   <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
