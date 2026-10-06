@@ -1030,8 +1030,9 @@
           fetch="https://gerrit-public.fairphone.software/" />
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
+  <!-- Test build of the GNSS source HAL: drop the revision once gnss-source-2 is merged. -->
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" />
+           remote="diamaneos" revision="gnss-source-2" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
@@ -1137,12 +1138,13 @@
        daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
        build; its client is linked into libloc_api_v02. core-utils:
        unmodified, for libqti_vndfwk_detect_vendor. -->
+  <!-- Test build: drop the three revisions once gnss-source is merged. -->
   <project name="hardware_qcom_gps" path="hardware/qcom/gps"
-           remote="diamaneos" />
+           remote="diamaneos" revision="gnss-source" />
   <project name="vendor_qcom_opensource_location" path="vendor/qcom/opensource/location"
-           remote="diamaneos" />
+           remote="diamaneos" revision="gnss-source" />
   <project name="vendor_qcom_opensource_qmi-framework" path="vendor/qcom/opensource/qmi-framework"
-           remote="diamaneos" />
+           remote="diamaneos" revision="gnss-source" />
   <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils"
            remote="codelinaro" revision="c4bd65ba4c0a068eda3c8dc9dc84ea8d10a0f5de" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
@@ -1197,5 +1199,6 @@
            remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
+  <!-- Test build of the GNSS source HAL: back to main once gnss-source-2 is merged. -->
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="gnss-source-2" />
 </manifest>
