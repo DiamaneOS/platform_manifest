@@ -1142,6 +1142,9 @@
   <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer"
            remote="diamaneos" groups="pdk-fs" />
   <!-- Search at the bottom, state lamps, hierarchy -->
+  <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
+  <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
+           remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Settings search slot -->
