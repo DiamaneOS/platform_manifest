@@ -1066,6 +1066,17 @@
   <project name="platform/external/nos/host/generic" path="external/nos/host/generic"
            remote="aosp" revision="fd50a4667c9500729f9b76afc294b203f48ad0d9"
            upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" />
+  <!-- Audio: the AudioReach primary HAL, PAL and AGM from Fairphone's
+       published FP6 sources (DiamaneOS forks with build changes), and the
+       graph service headers they build against, pinned unmodified. -->
+  <project name="hardware_qcom_audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_arpal-lx" path="vendor/qcom/opensource/pal"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm"
+           remote="diamaneos" />
+  <project name="platform/vendor/qcom-opensource/audioreach-graphservices" path="vendor/qcom/opensource/audio/graphservices"
+           remote="fairphone" revision="4d05487f252482978aeba9fc9c4c377ac1adbdb1" />
   <!-- Qualcomm display stack built from source (CodeLinaro bases with reviewed patches). -->
   <project name="hardware_qcom_display" path="hardware/qcom/display"
            remote="diamaneos" />
