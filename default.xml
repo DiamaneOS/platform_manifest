@@ -1131,6 +1131,20 @@
            remote="diamaneos" />
   <project name="pd-mapper" path="vendor/qcom/opensource/pd-mapper"
            remote="linux-msm" revision="107104b20bccc1089ba46893e64b3bdcb98c6830" />
+  <!-- Qualcomm's GNSS HAL and location libraries from CodeLinaro, in place of
+       the closed stock builds. gps and location: Soong builds, the libraries
+       load only libgnss and libloc_api_v02, no socket for the XTRA and DGNSS
+       daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
+       build; its client is linked into libloc_api_v02. core-utils:
+       unmodified, for libqti_vndfwk_detect_vendor. -->
+  <project name="hardware_qcom_gps" path="hardware/qcom/gps"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_location" path="vendor/qcom/opensource/location"
+           remote="diamaneos" />
+  <project name="vendor_qcom_opensource_qmi-framework" path="vendor/qcom/opensource/qmi-framework"
+           remote="diamaneos" />
+  <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils"
+           remote="codelinaro" revision="c4bd65ba4c0a068eda3c8dc9dc84ea8d10a0f5de" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
        carry the Tally work since 29 September 2026. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
