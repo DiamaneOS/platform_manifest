@@ -939,7 +939,6 @@
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="grapheneos" revision="3982cfc3536620c17b2ec5c3494af0fb2a58a633" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="grapheneos" revision="52c34a55bd26f7856f9141d7e4237397084d6936" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="grapheneos" revision="ff1b0197275bf47b415c3d6cbd518583fe7c5ebf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1163,6 +1162,9 @@
   <!-- Keyboard privacy fixes (register -108) -->
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
            remote="diamaneos" groups="pdk-fs" />
+  <!-- System updates (official builds only): the DiamaneOS update server -->
+  <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
+           remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
