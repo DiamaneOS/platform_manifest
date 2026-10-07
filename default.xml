@@ -1179,6 +1179,14 @@
   <!-- System updates (official builds only): the DiamaneOS update server -->
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
            remote="diamaneos" />
+  <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
+       editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
+       gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
+       (DIAMANEOS_GALLERY, DIAMANEOS_SCREENSHOT_EDITOR). -->
+  <project name="packages_apps_Glimpse" path="packages/apps/Glimpse"
+           remote="diamaneos" />
+  <project name="packages_apps_Canvas" path="packages/apps/Canvas"
+           remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
