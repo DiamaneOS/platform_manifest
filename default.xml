@@ -934,7 +934,6 @@
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="grapheneos" revision="a4e1839e755c0e5c1483f64632e5a8507e5d53cf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="grapheneos" revision="f5518d09c6e6953eaba6d0c7c23d5a2d766b6525" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
-  <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation" remote="grapheneos" revision="474472e844069392236782df2568db1f404945d0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="grapheneos" revision="3982cfc3536620c17b2ec5c3494af0fb2a58a633" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
@@ -1030,9 +1029,8 @@
           fetch="https://gerrit-public.fairphone.software/" />
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
-  <!-- Test build of the GNSS source HAL: drop the revision once gnss-source-2 is merged. -->
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="gnss-source-2" />
+           remote="diamaneos" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
@@ -1110,7 +1108,7 @@
            remote="diamaneos" />
   <!-- Read-only primary Wi-Fi association for the isolated radio observer. -->
   <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi"
-           remote="diamaneos" revision="android17" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"
            remote="fairphone" revision="3ccdfb5200c578ce349bcd985e1f95a241bc50d5" />
   <project name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights"
@@ -1138,13 +1136,12 @@
        daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
        build; its client is linked into libloc_api_v02. core-utils:
        unmodified, for libqti_vndfwk_detect_vendor. -->
-  <!-- Test build: drop the three revisions once gnss-source is merged. -->
   <project name="hardware_qcom_gps" path="hardware/qcom/gps"
-           remote="diamaneos" revision="gnss-source" />
+           remote="diamaneos" />
   <project name="vendor_qcom_opensource_location" path="vendor/qcom/opensource/location"
-           remote="diamaneos" revision="gnss-source" />
+           remote="diamaneos" />
   <project name="vendor_qcom_opensource_qmi-framework" path="vendor/qcom/opensource/qmi-framework"
-           remote="diamaneos" revision="gnss-source" />
+           remote="diamaneos" />
   <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils"
            remote="codelinaro" revision="c4bd65ba4c0a068eda3c8dc9dc84ea8d10a0f5de" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
@@ -1154,7 +1151,7 @@
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" revision="android17" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- Wallpaper & style previews that match the applied palette -->
   <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
@@ -1166,6 +1163,10 @@
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Sandboxed Google Play: its crash notice reports to the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat"
+           remote="diamaneos" groups="pdk-fs" />
+  <!-- Network location and geocoder: no GrapheneOS geocoding server, and OpenStreetMap
+       requests name DiamaneOS -->
+  <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation"
            remote="diamaneos" groups="pdk-fs" />
   <!-- System error reports: the Report button opens the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer"
@@ -1197,8 +1198,15 @@
   <!-- System updates (official builds only): the DiamaneOS update server -->
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
            remote="diamaneos" />
+  <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
+       editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
+       gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
+       (DIAMANEOS_GALLERY, DIAMANEOS_SCREENSHOT_EDITOR). -->
+  <project name="packages_apps_Glimpse" path="packages/apps/Glimpse"
+           remote="diamaneos" />
+  <project name="packages_apps_Canvas" path="packages/apps/Canvas"
+           remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
-  <!-- Test build of the GNSS source HAL: back to main once gnss-source-2 is merged. -->
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="gnss-source-2" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
 </manifest>
