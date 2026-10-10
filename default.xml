@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" revision="5553d44ce2b52f844ba09301dbecc5951144a8ab" upstream="passphrase-screens" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+           remote="diamaneos" revision="10780ca7bf4f82e19e6a0d3fd4cd2b77cae32449" upstream="passphrase-screens" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
