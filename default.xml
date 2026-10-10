@@ -941,9 +941,7 @@
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="grapheneos" revision="ff1b0197275bf47b415c3d6cbd518583fe7c5ebf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_packages_modules_ConfigInfrastructure" path="packages/modules/ConfigInfrastructure" remote="grapheneos" revision="2515bd1790e30597527ff83ac00ae0e7563da79b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="grapheneos" revision="215bd613910d77fbf58e55d4b8ec73f1a3713373" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_HealthFitness" path="packages/modules/HealthFitness" remote="grapheneos" revision="e42a6133a71038d47b669fe59871f3e84e5aa17a" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack" remote="grapheneos" revision="22adb6f742fdf27f2a4a2d42db06be0e490f54e0" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Nfc" path="packages/modules/Nfc" remote="grapheneos" revision="d0eb7b1a995a8702598a599df5ce2dbbcd01d01a" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Permission" path="packages/modules/Permission" remote="grapheneos" revision="4d6005dbabf3f2bf96e5215c5c2801809b051bf3" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_RemoteKeyProvisioning" path="packages/modules/RemoteKeyProvisioning" remote="grapheneos" revision="069767f2d1960ae3c6eb4d253cbb8c5b659c01fb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs"/>
@@ -971,7 +969,6 @@
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="grapheneos" revision="5e359dcf9ae863a593e9055a85e1657c87c4cb18" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_tools_aidl" path="system/tools/aidl" remote="grapheneos" revision="6e43dfbfa750163bedd259a79a9de4558c1b3d56" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_update_engine" path="system/update_engine" remote="grapheneos" revision="79f478a4f89e701e85fa15dec340bf445342abbd" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
-  <project name="platform_system_vold" path="system/vold" remote="grapheneos" revision="a47ab7c0d4be9e89459a268eab314cd3c758ec77" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_system_zygote" path="system/zygote" remote="grapheneos" revision="20eebb7f90f66ca9bcf4aea620d4168b48101773" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
   <project name="platform_tools_apksig" path="tools/apksig" remote="grapheneos" revision="54c5f4fa6131f728abf5d19e898db2c4eb5a6975" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk,tradefed"/>
   <project name="platform_tools_arsclib" path="tools/arsclib" remote="grapheneos" revision="e81e4e7a8e2af31804ad1f4fd100da01a2db9edf" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1079,9 +1076,9 @@
   <project name="hardware_qcom_display" path="hardware/qcom/display"
            remote="diamaneos" />
   <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"
-           remote="codelinaro" revision="0bd3aa234cb00ec16b5c6092e98ce622ae1e86eb" />
+           remote="codelinaro" revision="890cecd7904e8eae5677cff0912bdc3bf7f54528" />
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces"
-           remote="codelinaro" revision="357f62518548d522e47bff78b825321bf8f15f00" />
+           remote="codelinaro" revision="adfcd7b4ded42ce4f60d4b99f45bd4372a97af13" />
   <project name="platform/system/memory/libvmmem" path="vendor/qcom/opensource/libvmmem"
            remote="codelinaro-le" revision="543447bf4b8197d58258729f155b91c750a0247e" />
   <!-- Telephony framework: batch the vendor RIL's network-state polls while idle. -->
@@ -1089,6 +1086,12 @@
            remote="diamaneos" groups="pdk,sysui-studio" />
   <!-- Preserve address-state changes through framework callback comparisons. -->
   <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Connectivity checks and the private DNS check use the DiamaneOS servers. -->
+  <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack"
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <!-- The resolver's DNS-over-TLS and HTTPS checks use the DiamaneOS zone. -->
+  <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
   <project name="platform_build" path="build/make"
@@ -1151,7 +1154,7 @@
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
-           remote="diamaneos" revision="android17" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- Wallpaper & style previews that match the applied palette -->
   <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
@@ -1188,6 +1191,9 @@
            remote="diamaneos" />
   <!-- Recovery and fastbootd titles -->
   <project name="platform_bootable_recovery" path="bootable/recovery"
+           remote="diamaneos" groups="pdk" />
+  <!-- microSD: adopted as encrypted ext4, checked before every mount -->
+  <project name="platform_system_vold" path="system/vold"
            remote="diamaneos" groups="pdk" />
   <!-- Files: Get info takes the system palette like the other screens -->
   <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI"
