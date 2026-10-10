@@ -1151,7 +1151,7 @@
        carry the Tally work since 29 September 2026. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" revision="f0cc24d4d2f00b7ce7fdebe1322ad969f600c109" upstream="credential-policy" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+           remote="diamaneos" revision="5553d44ce2b52f844ba09301dbecc5951144a8ab" upstream="passphrase-screens" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
