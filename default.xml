@@ -1148,7 +1148,7 @@
   <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils"
            remote="codelinaro" revision="c4bd65ba4c0a068eda3c8dc9dc84ea8d10a0f5de" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
-       carry the Tally work since 29 September 2026. -->
+       carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1198,7 +1198,7 @@
   <!-- Files: Get info takes the system palette like the other screens -->
   <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
-  <!-- Keyboard privacy fixes (register -108) -->
+  <!-- Keyboard privacy fixes -->
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"
            remote="diamaneos" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
