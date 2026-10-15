@@ -935,7 +935,7 @@
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos"/>
+  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="bf6cba22950d8041dfbffa5f8f7600e4fac19e3b" upstream="download-automatic" />
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1027,13 +1027,13 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" />
+           remote="diamaneos" revision="37a4ea4c76b9719fac9124460e374dd564a78945" upstream="usb-data-gate" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
-           remote="diamaneos" />
+           remote="diamaneos" revision="02e24aef83df27ebcdaaaca9730380c8c7d8c9f7" upstream="wlan-lease-clock" />
   <!-- Maintained carrier service with optional device configuration data. -->
   <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig"
            remote="diamaneos" />
@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="3180357d333ee1e328f3909b99739f4729a2e853" upstream="test-20261015-b14" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
@@ -1203,7 +1203,7 @@
            remote="diamaneos" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
-           remote="diamaneos" />
+           remote="diamaneos" revision="bb4ee7125f931e0ca4da2eb50fc01043019aa35e" upstream="download-automatic" />
   <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
        editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
        gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
@@ -1213,6 +1213,6 @@
   <project name="packages_apps_Canvas" path="packages/apps/Canvas"
            remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
-  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
+  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="cfa769859aed0edb6fba57fb79d7e1326c768484" upstream="usb-data-gate-test-20261015" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="e482801ac9c78d13ed914882dd730a2b4c6ce9c7" upstream="test-20261015-b14" />
 </manifest>
