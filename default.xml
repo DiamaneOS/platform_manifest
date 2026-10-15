@@ -1027,7 +1027,7 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="d53896abc38d902df1d9cc1ecefa6fd5d20dcdc2" upstream="test-20261015-b16" />
+           remote="diamaneos" revision="bc2b81e29aa819cc98334ddde5c48159f2bb79fa" upstream="test-20261015-b16" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
