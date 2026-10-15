@@ -1027,9 +1027,9 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="bc2b81e29aa819cc98334ddde5c48159f2bb79fa" upstream="test-20261015-b16" />
+           remote="diamaneos" revision="97b58781e72e411c31c9d9579d472bd0a4a0f22d" upstream="test-20261015-b17" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
-           remote="diamaneos" />
+           remote="diamaneos" revision="4845a05aac6e117fccb98ec9a31de2ac582ad28c" upstream="test-20261015-b17" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="2afdd7fea17728c18c955c5ed8e285dc5c254a27" upstream="test-20261015-b16" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="b8c2f43d784a363ebe486755bce340ae1e19ada5" upstream="test-20261015-b17" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
@@ -1214,5 +1214,5 @@
            remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="79131b789ec2679e768af6b3fdfb3a1a5c7137e3" upstream="test-20261015-b16" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="683ac54f64aa06e695a63e11da6f38ac35e15166" upstream="test-20261015-b16" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="334375811dd0a530d4481c90a6ad69867e177932" upstream="test-20261015-b17" />
 </manifest>
