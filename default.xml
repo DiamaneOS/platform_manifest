@@ -1200,7 +1200,7 @@
            remote="diamaneos" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
-           remote="diamaneos" revision="e821b64ca068a6ea1894720004e6e65c96761a56" upstream="test-20261016-b17-all" />
+           remote="diamaneos" revision="189da86e85fe6bd116e3e6234f12c96c0795f113" upstream="test-20261016-b17-all" />
   <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
        editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
        gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
