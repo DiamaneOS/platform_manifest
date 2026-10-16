@@ -901,9 +901,6 @@
   <project name="platform_cts" path="cts" remote="grapheneos" revision="499ba448045831ad3e19b40e1b45f269d3a779c1" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="cts,pdk-cw-fs,pdk-fs"/>
   <project name="platform_development" path="development" remote="grapheneos" revision="4089e8b6cfe6cc088006fcc7ad34ba1132356a1b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_external_AppCompatConfig" path="external/AppCompatConfig" remote="grapheneos" revision="8798038537b1951d626e8ce8204269c3abacf376" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
-  <project name="platform_external_AppStore" path="external/AppStore" remote="grapheneos" revision="5f32bce36bb1e38c037b10dfce93ec86d2e7d6eb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="platform_external_Auditor" path="external/Auditor" remote="grapheneos" revision="8115eb9d03e8b77dd54f5931d50aacc6b19a04fb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="platform_external_Camera" path="external/Camera" remote="grapheneos" revision="1e8ea44155ce3c023d9b1486d57a44268276c315" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_GmsCompatConfig" path="external/GmsCompatConfig" remote="grapheneos" revision="39df97dcdf0e8a52a26e109f5204fe0f50c12027" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
   <project name="platform_external_Info" path="external/Info" remote="grapheneos" revision="09b5bc8d26eadb57cf8e375156d2af22b341111e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
   <project name="platform_external_Messaging" path="external/Messaging" remote="grapheneos" revision="041f08bc0d81a45cd59194bfc974a44edb204ca9" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
@@ -1030,7 +1027,7 @@
            remote="diamaneos" revision="f8d75a325bc682c5726ad74311a245a338632885" upstream="test-20261016-b17-charge" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" revision="1b715558b2f6550687b566b6f99553d3cd52855c" upstream="test-20261016-b17" />
-  <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
+  <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
            remote="diamaneos" revision="02e24aef83df27ebcdaaaca9730380c8c7d8c9f7" upstream="wlan-lease-clock" />
@@ -1041,7 +1038,7 @@
   <project name="platform_packages_apps_ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement"
            remote="diamaneos" />
   <!-- Reserve vendor voice-session control for trusted services and the signed
-       call-audio bridge; ordinary MODIFY_AUDIO_SETTINGS is insufficient. -->
+       call-audio bridge. Ordinary MODIFY_AUDIO_SETTINGS is not enough. -->
   <project name="platform_frameworks_av" path="frameworks/av"
            remote="diamaneos" groups="pdk,sysui-studio" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
@@ -1137,7 +1134,7 @@
        the closed stock builds. gps and location: Soong builds, the libraries
        load only libgnss and libloc_api_v02, no socket for the XTRA and DGNSS
        daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
-       build; its client is linked into libloc_api_v02. core-utils:
+       build, its client linked into libloc_api_v02. core-utils:
        unmodified, for libqti_vndfwk_detect_vendor. -->
   <project name="hardware_qcom_gps" path="hardware/qcom/gps"
            remote="diamaneos" />
@@ -1174,10 +1171,10 @@
   <!-- System error reports: the Report button opens the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer"
            remote="diamaneos" groups="pdk-fs" />
-  <!-- Search at the bottom, state lamps, hierarchy -->
   <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
+  <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="c346b8dfcb79e2589aee7b77cc2e01e288f10262" upstream="test-20261016-b17-charge" />
   <!-- Settings search slot -->
@@ -1212,6 +1209,13 @@
            remote="diamaneos" />
   <project name="packages_apps_Canvas" path="packages/apps/Canvas"
            remote="diamaneos" />
+  <!-- Bundled apps: our copies of GrapheneOS's App Store, Auditor and Camera prebuilts. -->
+  <project name="platform_external_AppStore" path="external/AppStore"
+           remote="diamaneos" clone-depth="1" />
+  <project name="platform_external_Auditor" path="external/Auditor"
+           remote="diamaneos" clone-depth="1" />
+  <project name="platform_external_Camera" path="external/Camera"
+           remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="79131b789ec2679e768af6b3fdfb3a1a5c7137e3" upstream="test-20261015-b16" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="4cb5cc66a4bdbd8e89c46d277dfd09a1646a6f6d" upstream="test-20261016-b17" />
