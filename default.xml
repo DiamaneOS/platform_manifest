@@ -1027,9 +1027,9 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="97b58781e72e411c31c9d9579d472bd0a4a0f22d" upstream="test-20261015-b17" />
+           remote="diamaneos" revision="13212df0198d8d73044eb6d48c06babd12337120" upstream="test-20261016-b17" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
-           remote="diamaneos" revision="4845a05aac6e117fccb98ec9a31de2ac582ad28c" upstream="test-20261015-b17" />
+           remote="diamaneos" revision="1b715558b2f6550687b566b6f99553d3cd52855c" upstream="test-20261016-b17" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
@@ -1151,7 +1151,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="9a1ebeaefb8d7e11e49f512c645f642c0cc4c02e" upstream="ui-polish-20261015" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1163,7 +1163,7 @@
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
   <!-- Home, All apps and Recents -->
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="4245a4ccbd29f6bb8df86d6b4d8117c3d79d0c0d" upstream="ui-polish-20261015" />
   <!-- Sandboxed Google Play: its crash notice reports to the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat"
            remote="diamaneos" groups="pdk-fs" />
@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="b8c2f43d784a363ebe486755bce340ae1e19ada5" upstream="test-20261015-b17" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="46eac6ccfd34b3872b0af909a06d2d4af4af3916" upstream="test-20261016-b17" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
@@ -1214,5 +1214,5 @@
            remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="79131b789ec2679e768af6b3fdfb3a1a5c7137e3" upstream="test-20261015-b16" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="334375811dd0a530d4481c90a6ad69867e177932" upstream="test-20261015-b17" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="89f712d20c41fc5a788d6edcd05ab483e70e1589" upstream="test-20261016-b17" />
 </manifest>
