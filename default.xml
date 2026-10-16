@@ -1217,6 +1217,6 @@
   <project name="platform_external_Camera" path="external/Camera"
            remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
-  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="79131b789ec2679e768af6b3fdfb3a1a5c7137e3" upstream="test-20261015-b16" />
+  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="5115ceb4816ac477086a869febe95b61bb879b2b" upstream="test-20261016-b17" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="1fe38072a745a540a28eb2d242746bebbd258176" upstream="test-20261016-b17-imei" />
 </manifest>
