@@ -932,7 +932,7 @@
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="bf6cba22950d8041dfbffa5f8f7600e4fac19e3b" upstream="download-automatic" />
+  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="b8dc8cead5e302dbdde18bcee46ba6a5ceccff44" upstream="test-20261016-b17-all" />
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1024,13 +1024,13 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="f8d75a325bc682c5726ad74311a245a338632885" upstream="test-20261016-b17-charge" />
+           remote="diamaneos" revision="ee0fa9af96c7e968b7fd1e6a181cc30c28004fd3" upstream="test-20261016-b17-all" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
-           remote="diamaneos" revision="1b715558b2f6550687b566b6f99553d3cd52855c" upstream="test-20261016-b17" />
+           remote="diamaneos" revision="1e424795ceb11c20e251689977ee99b7017b80c0" upstream="test-20261016-b17-all" />
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
-           remote="diamaneos" revision="02e24aef83df27ebcdaaaca9730380c8c7d8c9f7" upstream="wlan-lease-clock" />
+           remote="diamaneos" revision="90030e7efbe3e90427551d5e88333186318f4504" upstream="test-20261016-b17-all" />
   <!-- Maintained carrier service with optional device configuration data. -->
   <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig"
            remote="diamaneos" />
@@ -1148,7 +1148,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="d08ba5f1fad19e33e12cde17ab34f2ca6e9e7b7b" upstream="test-20261016-b17-charge" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="4d7d4354d5649af94a13fda12d5aeef2324e8d68" upstream="test-20261016-b17-all" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1160,7 +1160,7 @@
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
   <!-- Home, All apps and Recents -->
   <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="4245a4ccbd29f6bb8df86d6b4d8117c3d79d0c0d" upstream="ui-polish-20261015" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="723d93e18cd19f6a3641e8794498adc73cc83dc7" upstream="test-20261016-b17-all" />
   <!-- Sandboxed Google Play: its crash notice reports to the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat"
            remote="diamaneos" groups="pdk-fs" />
@@ -1173,10 +1173,10 @@
            remote="diamaneos" groups="pdk-fs" />
   <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
-           remote="diamaneos" />
+           remote="diamaneos" revision="eea0494d191e07c8c2baba69dcd94a36dc6ca21e" upstream="test-20261016-b17-all" />
   <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="c346b8dfcb79e2589aee7b77cc2e01e288f10262" upstream="test-20261016-b17-charge" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="102ead48bb24058714d3e65723d8a6c720084b84" upstream="test-20261016-b17-all" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
@@ -1200,7 +1200,7 @@
            remote="diamaneos" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
   <project name="platform_packages_apps_Updater" path="packages/apps/Updater"
-           remote="diamaneos" revision="bb4ee7125f931e0ca4da2eb50fc01043019aa35e" upstream="download-automatic" />
+           remote="diamaneos" revision="e821b64ca068a6ea1894720004e6e65c96761a56" upstream="test-20261016-b17-all" />
   <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
        editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
        gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
@@ -1218,5 +1218,5 @@
            remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="79131b789ec2679e768af6b3fdfb3a1a5c7137e3" upstream="test-20261015-b16" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="4cb5cc66a4bdbd8e89c46d277dfd09a1646a6f6d" upstream="test-20261016-b17" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="5ee2dd84da8f3b675f8a789c797c09f247728de2" upstream="test-20261016-b17-all" />
 </manifest>
