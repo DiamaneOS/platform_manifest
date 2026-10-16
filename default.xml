@@ -901,9 +901,6 @@
   <project name="platform_cts" path="cts" remote="grapheneos" revision="499ba448045831ad3e19b40e1b45f269d3a779c1" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="cts,pdk-cw-fs,pdk-fs"/>
   <project name="platform_development" path="development" remote="grapheneos" revision="4089e8b6cfe6cc088006fcc7ad34ba1132356a1b" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="developers,pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_external_AppCompatConfig" path="external/AppCompatConfig" remote="grapheneos" revision="8798038537b1951d626e8ce8204269c3abacf376" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
-  <project name="platform_external_AppStore" path="external/AppStore" remote="grapheneos" revision="5f32bce36bb1e38c037b10dfce93ec86d2e7d6eb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="platform_external_Auditor" path="external/Auditor" remote="grapheneos" revision="8115eb9d03e8b77dd54f5931d50aacc6b19a04fb" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
-  <project name="platform_external_Camera" path="external/Camera" remote="grapheneos" revision="1e8ea44155ce3c023d9b1486d57a44268276c315" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
   <project name="platform_external_GmsCompatConfig" path="external/GmsCompatConfig" remote="grapheneos" revision="39df97dcdf0e8a52a26e109f5204fe0f50c12027" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
   <project name="platform_external_Info" path="external/Info" remote="grapheneos" revision="09b5bc8d26eadb57cf8e375156d2af22b341111e" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs" clone-depth="1"/>
   <project name="platform_external_Messaging" path="external/Messaging" remote="grapheneos" revision="041f08bc0d81a45cd59194bfc974a44edb204ca9" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" clone-depth="1"/>
@@ -1212,6 +1209,14 @@
            remote="diamaneos" />
   <project name="packages_apps_Canvas" path="packages/apps/Canvas"
            remote="diamaneos" />
+  <!-- Bundled apps: our copies of GrapheneOS's App Store, Auditor and Camera prebuilts.
+       android17 equals the GrapheneOS release until we ship our own builds. -->
+  <project name="platform_external_AppStore" path="external/AppStore"
+           remote="diamaneos" clone-depth="1" />
+  <project name="platform_external_Auditor" path="external/Auditor"
+           remote="diamaneos" clone-depth="1" />
+  <project name="platform_external_Camera" path="external/Camera"
+           remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
