@@ -1027,7 +1027,7 @@
            remote="diamaneos" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" />
-  <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
+  <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
            remote="diamaneos" />
@@ -1038,7 +1038,7 @@
   <project name="platform_packages_apps_ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement"
            remote="diamaneos" />
   <!-- Reserve vendor voice-session control for trusted services and the signed
-       call-audio bridge; ordinary MODIFY_AUDIO_SETTINGS is insufficient. -->
+       call-audio bridge. Ordinary MODIFY_AUDIO_SETTINGS is not enough. -->
   <project name="platform_frameworks_av" path="frameworks/av"
            remote="diamaneos" groups="pdk,sysui-studio" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
@@ -1134,7 +1134,7 @@
        the closed stock builds. gps and location: Soong builds, the libraries
        load only libgnss and libloc_api_v02, no socket for the XTRA and DGNSS
        daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
-       build; its client is linked into libloc_api_v02. core-utils:
+       build, its client linked into libloc_api_v02. core-utils:
        unmodified, for libqti_vndfwk_detect_vendor. -->
   <project name="hardware_qcom_gps" path="hardware/qcom/gps"
            remote="diamaneos" />
@@ -1171,10 +1171,10 @@
   <!-- System error reports: the Report button opens the DiamaneOS issue tracker -->
   <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer"
            remote="diamaneos" groups="pdk-fs" />
-  <!-- Search at the bottom, state lamps, hierarchy -->
   <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
+  <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
            remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Settings search slot -->
@@ -1209,8 +1209,7 @@
            remote="diamaneos" />
   <project name="packages_apps_Canvas" path="packages/apps/Canvas"
            remote="diamaneos" />
-  <!-- Bundled apps: our copies of GrapheneOS's App Store, Auditor and Camera prebuilts.
-       android17 equals the GrapheneOS release until we ship our own builds. -->
+  <!-- Bundled apps: our copies of GrapheneOS's App Store, Auditor and Camera prebuilts. -->
   <project name="platform_external_AppStore" path="external/AppStore"
            remote="diamaneos" clone-depth="1" />
   <project name="platform_external_Auditor" path="external/Auditor"
