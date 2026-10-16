@@ -1027,7 +1027,7 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="13212df0198d8d73044eb6d48c06babd12337120" upstream="test-20261016-b17" />
+           remote="diamaneos" revision="f8d75a325bc682c5726ad74311a245a338632885" upstream="test-20261016-b17-charge" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" revision="1b715558b2f6550687b566b6f99553d3cd52855c" upstream="test-20261016-b17" />
   <!-- Isolated IMS data broker; the stock IMS and IWLAN frontends remain in
@@ -1121,7 +1121,7 @@
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb"
            remote="fairphone" revision="7e65693c12f98c3aca9721287dc2c648ea83e65a" />
   <project name="vendor_qcom_opensource_healthd-ext" path="vendor/qcom/opensource/healthd-ext"
-           remote="diamaneos" />
+           remote="diamaneos" revision="f1f988546c457d943a24e04c6ab377327ae3feb7" upstream="charge-limit-20261016" />
   <!-- linux-msm QRTR file server and protection-domain mapper for the modem
        and DSPs, in place of Qualcomm's tftp_server and pd-mapper. tqftpserv:
        memory and path fixes, unlink and truncation. qrtr: the library is
@@ -1151,7 +1151,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="9a1ebeaefb8d7e11e49f512c645f642c0cc4c02e" upstream="ui-polish-20261015" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="d08ba5f1fad19e33e12cde17ab34f2ca6e9e7b7b" upstream="test-20261016-b17-charge" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1179,7 +1179,7 @@
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc"
            remote="diamaneos" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="46eac6ccfd34b3872b0af909a06d2d4af4af3916" upstream="test-20261016-b17" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="c346b8dfcb79e2589aee7b77cc2e01e288f10262" upstream="test-20261016-b17-charge" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
