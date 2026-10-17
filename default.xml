@@ -1148,7 +1148,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="2c72a189edb029cef7764cf27a54453c404430fd" upstream="test-20261016-b17-all" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="a6bf4209cf640b99629ea14228f9cfe70d4873a3" upstream="test-20261016-b17-all" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
