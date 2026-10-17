@@ -932,7 +932,7 @@
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="db9f5b7e506f02d11ca1cea4c4ed3e7e46a7fde0" upstream="test-20261016-b17-imei" />
+  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="81c9562122b13d535f0c7452ceebc1b28a8af91a" upstream="test-20261016-b17-imei" />
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1030,7 +1030,7 @@
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims"
-           remote="diamaneos" revision="b736d77e227e50671cdc57b275de8b763d01378c" upstream="test-20261016-b17-imei" />
+           remote="diamaneos" revision="3e049b91d66f69128c824d6ea58b8267ba79ad1b" upstream="test-20261016-b17-imei" />
   <!-- Maintained carrier service with optional device configuration data. -->
   <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig"
            remote="diamaneos" />
@@ -1080,7 +1080,7 @@
            remote="codelinaro-le" revision="543447bf4b8197d58258729f155b91c750a0247e" />
   <!-- Telephony framework: batch the vendor RIL's network-state polls while idle. -->
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony"
-           remote="diamaneos" groups="pdk,sysui-studio" />
+           remote="diamaneos" groups="pdk,sysui-studio" revision="c3e91de1f26802cd426bc4fce117cba825af6cd1" upstream="imei-restart-notice-20261017" />
   <!-- Preserve address-state changes through framework callback comparisons. -->
   <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
@@ -1218,5 +1218,5 @@
            remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="cba44e7ccfa255aa1e7c6692f28b8e030a69024f" upstream="test-20261016-b17" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="e539fd4938ae8927d3ae7cdd83e92231892f9018" upstream="test-20261016-b17-imei" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="68e0bfb47cbb559e0b9c43fcc3771543d4c730fc" upstream="test-20261016-b17-imei" />
 </manifest>
