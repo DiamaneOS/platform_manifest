@@ -1024,7 +1024,7 @@
   <remote name="linux-msm"
           fetch="https://github.com/linux-msm/" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6"
-           remote="diamaneos" revision="3f4486e9b088e6a95ac01acf456dd4d598fe39a9" upstream="test-20261016-b17-all" />
+           remote="diamaneos" revision="b220d834a27ed93a96ce7c0a4dc26dad9c77d568" upstream="test-20261016-b17-all" />
   <project name="vendor_diamaneos" path="vendor/diamaneos"
            remote="diamaneos" revision="1e424795ceb11c20e251689977ee99b7017b80c0" upstream="test-20261016-b17-all" />
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
@@ -1176,7 +1176,7 @@
            remote="diamaneos" revision="eea0494d191e07c8c2baba69dcd94a36dc6ca21e" upstream="test-20261016-b17-all" />
   <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="e511be9ba110dec6241fd68ab9cacf3cf0d6c4d8" upstream="test-20261016-b17-all" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="4214c25b9593670dba8a3e423513c7549fba98a1" upstream="test-20261016-b17-all" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
