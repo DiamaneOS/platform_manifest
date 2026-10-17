@@ -1151,7 +1151,7 @@
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="a6bf4209cf640b99629ea14228f9cfe70d4873a3" upstream="test-20261016-b17-all" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="1d6708bf90a74f2d41f811f8b00a5239e9b0b762" upstream="android17" />
   <!-- Wallpaper & style previews that match the applied palette -->
   <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker"
            remote="diamaneos" groups="pdk-fs,sysui-studio" />
