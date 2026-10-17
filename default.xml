@@ -932,7 +932,7 @@
   <project name="platform_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" remote="grapheneos" revision="a3ba692862141cf5d1bc0b8afa9b34e607ef1796" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs"/>
   <project name="platform_packages_apps_Seedvault" path="packages/apps/Seedvault" remote="grapheneos" revision="7cfffed7ceeda60a10bf2a6d9818d6fda81828ba" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600"/>
-  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="fd0326a17ed87cda99d436300b1aef91f1c80c97" upstream="test-20261016-b17-imei" />
+  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="db9f5b7e506f02d11ca1cea4c4ed3e7e46a7fde0" upstream="test-20261016-b17-imei" />
   <project name="platform_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="grapheneos" revision="4e4f65ae3cdbbd683ddd8f98848aa2bceac82831" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-fs"/>
   <project name="platform_packages_modules_AdServices" path="packages/modules/AdServices" remote="grapheneos" revision="c20fb142c4908a6d8f8f5d2e82ea7a25f3cafdd4" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform_packages_modules_AppSearch" path="packages/modules/AppSearch" remote="grapheneos" revision="4a8ffaab447b4917a935765725b41fb0ef16b409" upstream="refs/tags/2026100600" dest-branch="refs/tags/2026100600" groups="pdk"/>
@@ -1148,7 +1148,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="4d7d4354d5649af94a13fda12d5aeef2324e8d68" upstream="test-20261016-b17-all" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="158a51872b07f83f8002ca1cbad9eca0a39a7264" upstream="test-20261016-b17-all" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
@@ -1213,10 +1213,10 @@
   <project name="platform_external_AppStore" path="external/AppStore"
            remote="diamaneos" clone-depth="1" />
   <project name="platform_external_Auditor" path="external/Auditor"
-           remote="diamaneos" clone-depth="1" />
+           remote="diamaneos" clone-depth="1" revision="39df2b1700b83b4fd8b90b48dc9cd1d7fc07797c" upstream="test-20261016-b17-all" />
   <project name="platform_external_Camera" path="external/Camera"
            remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="5115ceb4816ac477086a869febe95b61bb879b2b" upstream="test-20261016-b17" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="c9732f273e5583e1b321b601735fd5f2acb8bf35" upstream="test-20261016-b17-imei" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="78b34d83cfdab2e819cd2baefb5b3e9c31028e2a" upstream="test-20261016-b17-imei" />
 </manifest>
