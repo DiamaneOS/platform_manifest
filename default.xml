@@ -1176,7 +1176,7 @@
            remote="diamaneos" revision="eea0494d191e07c8c2baba69dcd94a36dc6ca21e" upstream="test-20261016-b17-all" />
   <!-- Search at the bottom, state lamps, hierarchy -->
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings"
-           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="102ead48bb24058714d3e65723d8a6c720084b84" upstream="test-20261016-b17-all" />
+           remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="e511be9ba110dec6241fd68ab9cacf3cf0d6c4d8" upstream="test-20261016-b17-all" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence"
            remote="diamaneos" groups="pdk-fs" />
