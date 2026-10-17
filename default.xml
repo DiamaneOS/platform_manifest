@@ -1218,5 +1218,5 @@
            remote="diamaneos" clone-depth="1" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="5115ceb4816ac477086a869febe95b61bb879b2b" upstream="test-20261016-b17" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="1fe38072a745a540a28eb2d242746bebbd258176" upstream="test-20261016-b17-imei" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="c9732f273e5583e1b321b601735fd5f2acb8bf35" upstream="test-20261016-b17-imei" />
 </manifest>
