@@ -1148,7 +1148,7 @@
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
   <project name="platform_frameworks_base" path="frameworks/base"
-           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="a6bf4209cf640b99629ea14228f9cfe70d4873a3" upstream="test-20261016-b17-all" />
+           remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="5812f0353e67a5dd96c77bbaf15a787387cec417" upstream="test-20261017-moments" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui"
            remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="1d6708bf90a74f2d41f811f8b00a5239e9b0b762" upstream="android17" />
@@ -1211,11 +1211,11 @@
            remote="diamaneos" />
   <!-- Bundled apps: our copies of GrapheneOS's App Store, Auditor and Camera prebuilts. -->
   <project name="platform_external_AppStore" path="external/AppStore"
-           remote="diamaneos" clone-depth="1" />
+           remote="diamaneos" clone-depth="1" revision="5f32bce36bb1e38c037b10dfce93ec86d2e7d6eb" upstream="android17" />
   <project name="platform_external_Auditor" path="external/Auditor"
            remote="diamaneos" clone-depth="1" revision="39df2b1700b83b4fd8b90b48dc9cd1d7fc07797c" upstream="test-20261016-b17-all" />
   <project name="platform_external_Camera" path="external/Camera"
-           remote="diamaneos" clone-depth="1" />
+           remote="diamaneos" clone-depth="1" revision="1e8ea44155ce3c023d9b1486d57a44268276c315" upstream="android17" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="4f12926a5fc850bf0b3b08ef92994687ef2860ad" upstream="test-20261017-camsmmu" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="fb37bcfb14ced5b65b2ba6e88ca50f982f377edd" upstream="camera-smmu-panic-20261017" />
