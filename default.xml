@@ -1040,7 +1040,7 @@
   <!-- Reserve vendor voice-session control for trusted services and the signed
        call-audio bridge. Ordinary MODIFY_AUDIO_SETTINGS is not enough. -->
   <project name="platform_frameworks_av" path="frameworks/av"
-           remote="diamaneos" groups="pdk,sysui-studio" />
+           remote="diamaneos" groups="pdk,sysui-studio" revision="1ef418bfb306ba76d76691baa2d4d30f702f54a6" upstream="camera-smmu-panic-20261017" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
   <project name="hardware_qcom_bootctrl" path="hardware/qcom/bootctrl"
            remote="diamaneos" />
