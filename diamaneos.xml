@@ -90,7 +90,7 @@
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs" />
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6" remote="diamaneos" />
-  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" />
+  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" revision="test-20261021-staging-origins" />
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims" remote="diamaneos" />
