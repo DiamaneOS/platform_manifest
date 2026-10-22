@@ -208,7 +208,7 @@
   <!-- Keyboard privacy fixes -->
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="diamaneos" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
-  <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="diamaneos" revision="updater-boot-failure-20261022" />
+  <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="diamaneos" revision="updater-rollback-after-start-20261022" />
   <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
        editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
        gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
