@@ -85,57 +85,57 @@
   <remove-project name="platform_packages_modules_Wifi" />
   <remove-project name="platform_system_vold" />
 
-  <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="diamaneos" groups="pdk-fs" />
-  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="diamaneos" groups="pdk-fs" />
-  <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs" />
-  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" />
-  <project name="device_fairphone_FP6" path="device/fairphone/FP6" remote="diamaneos" />
-  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" />
+  <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="diamaneos" revision="b424b64c5a852a03a972aacd506ded7649fd1b8a" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
+  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="diamaneos" revision="7817cf85b4003f7746418cf0b41f198f661a2f9e" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
+  <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" revision="7ef03272639d60dbbcdd381ede7d2021674ff2e3" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
+  <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" revision="cbfacd2f8386339004f5d5151f30652a629ab7c8" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="device_fairphone_FP6" path="device/fairphone/FP6" remote="diamaneos" revision="f5d32c1369a8a7d76447f1d428741f63dbe64ed2" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" revision="dd72075eaeaae89924bdd3d67d6755f648d8c316" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
-  <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims" remote="diamaneos" />
+  <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims" remote="diamaneos" revision="40150e53f39265acd5495251c17e259fb249e9e6" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Maintained carrier service with optional device configuration data. -->
-  <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="diamaneos" />
+  <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="diamaneos" revision="b3f13a6363470d690d6e318a217733ee4173f0f8" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Preserve carrier HTTPS provisioning without the inherited Google push SDKs. -->
-  <project name="platform_packages_apps_ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement" remote="diamaneos" />
+  <project name="platform_packages_apps_ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement" remote="diamaneos" revision="29fe2138bdc8c9f15021d9021a694912a1e995f4" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Reserve vendor voice-session control for trusted services and the signed
        call-audio bridge. Ordinary MODIFY_AUDIO_SETTINGS is not enough. -->
-  <project name="platform_frameworks_av" path="frameworks/av" remote="diamaneos" groups="pdk,sysui-studio" />
+  <project name="platform_frameworks_av" path="frameworks/av" remote="diamaneos" revision="792389cddd23b7e6d6845cf5c5e291bdf0843981" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk,sysui-studio" />
   <!-- Required published boot-control and GPT/UFS implementation. -->
-  <project name="hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="diamaneos" />
+  <project name="hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" remote="diamaneos" revision="0c4a0931ce395866e8f437ac35cdc0804d6013b4" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="diamaneos" revision="e0906a30ac26dee420fcdd716084793b983237ec" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Power HAL: LineageOS's libperfmgr, used unmodified through DiamaneOS
        mirrors pinned to exact commits (lineage-24.0). hardware/google/pixel
        provides libperfmgr. AOSP's nos host libraries, which GrapheneOS leaves
        out, only let Soong resolve that project's unused fastboot and recovery
        modules. -->
-  <project name="hardware_lineage_interfaces" path="hardware/lineage/interfaces" remote="diamaneos" revision="a0f3ada220c573a2252bcb506407b04dfb9b3de0" />
-  <project name="hardware_google_pixel" path="hardware/google/pixel" remote="diamaneos" revision="8bd3c71cf2be40cfbe8f5a4b9bf5574ee9fbc624" />
+  <project name="hardware_lineage_interfaces" path="hardware/lineage/interfaces" remote="diamaneos" revision="a0f3ada220c573a2252bcb506407b04dfb9b3de0" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="hardware_google_pixel" path="hardware/google/pixel" remote="diamaneos" revision="8bd3c71cf2be40cfbe8f5a4b9bf5574ee9fbc624" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="platform/external/nos/host/generic" path="external/nos/host/generic" remote="aosp" revision="fd50a4667c9500729f9b76afc294b203f48ad0d9" upstream="refs/tags/android-17.0.0_r1" dest-branch="refs/tags/android-17.0.0_r1" />
   <!-- Audio: the AudioReach primary HAL, PAL and AGM from Fairphone's
        published FP6 sources (DiamaneOS forks with build changes), and the
        graph service headers they build against, pinned unmodified. -->
-  <project name="hardware_qcom_audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_arpal-lx" path="vendor/qcom/opensource/pal" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="diamaneos" />
+  <project name="hardware_qcom_audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="diamaneos" revision="c6571515fd6f5572c5b3de580a056b4a27e23d23" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_arpal-lx" path="vendor/qcom/opensource/pal" remote="diamaneos" revision="545a1aa2635bf77897dc00d572b9b902ce575574" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="diamaneos" revision="e70f475ebb4d6072af121774afb822a6c887118d" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="platform/vendor/qcom-opensource/audioreach-graphservices" path="vendor/qcom/opensource/audio/graphservices" remote="fairphone" revision="4d05487f252482978aeba9fc9c4c377ac1adbdb1" />
   <!-- Qualcomm display stack built from source (CodeLinaro bases with reviewed patches). -->
-  <project name="hardware_qcom_display" path="hardware/qcom/display" remote="diamaneos" />
+  <project name="hardware_qcom_display" path="hardware/qcom/display" remote="diamaneos" revision="db3ad222633df232bb71400a08793f881d42018e" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="codelinaro" revision="890cecd7904e8eae5677cff0912bdc3bf7f54528" />
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" remote="codelinaro" revision="adfcd7b4ded42ce4f60d4b99f45bd4372a97af13" />
   <project name="platform/system/memory/libvmmem" path="vendor/qcom/opensource/libvmmem" remote="codelinaro-le" revision="543447bf4b8197d58258729f155b91c750a0247e" />
   <!-- Telephony framework: batch the vendor RIL's network-state polls while idle. -->
-  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="diamaneos" groups="pdk,sysui-studio" />
+  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="diamaneos" revision="87ad25b488d2616a631d674c83fb72619269c3f0" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk,sysui-studio" />
   <!-- Preserve address-state changes through framework callback comparisons. -->
-  <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <project name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="diamaneos" revision="61596da614d0ea116deb2eb637b473af5c3bead9" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs" />
   <!-- Connectivity checks and the private DNS check use the DiamaneOS servers. -->
-  <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack" remote="diamaneos" revision="6fd03387ac14588433981aa8edad7c73117f2346" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs" />
   <!-- The resolver's DNS-over-TLS and HTTPS checks use the DiamaneOS zone. -->
-  <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="diamaneos" revision="4732439737632b5ab95055501cfc7100dc81d204" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs" />
   <!-- Our Auditor gets the hibernation exemption GrapheneOS gives its own. -->
-  <project name="platform_packages_modules_Permission" path="packages/modules/Permission" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <project name="platform_packages_modules_Permission" path="packages/modules/Permission" remote="diamaneos" revision="2913c4103d169409064210f7f9ebbed1f6dcd4ce" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
-  <project name="platform_build" path="build/make" remote="diamaneos" groups="pdk,sysui-studio">
+  <project name="platform_build" path="build/make" remote="diamaneos" revision="8e8ad6306449f42839a2effbcf96c8924f03acff" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk,sysui-studio">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -144,23 +144,23 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <!-- Vendor-specific sensors without their own permission need the Sensors permission. -->
-  <project name="platform_frameworks_native" path="frameworks/native" remote="diamaneos" groups="pdk,sysui-studio" />
+  <project name="platform_frameworks_native" path="frameworks/native" remote="diamaneos" revision="4e4d5aa563f226c26248875b1ff3184262662767" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk,sysui-studio" />
   <!-- Qualcomm Wi-Fi HAL from CodeLinaro (Soong-converted) replaces AOSP's copy. -->
-  <project name="hardware_qcom_wlan" path="hardware/qcom/wlan" remote="diamaneos" />
+  <project name="hardware_qcom_wlan" path="hardware/qcom/wlan" remote="diamaneos" revision="81ea0763c1f208a66afe8727e692d9a215eb6e4a" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Read-only primary Wi-Fi association for the isolated radio observer. -->
-  <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi" remote="diamaneos" revision="6d2cb7e481536ce812659b468cd4e5a0892b1ebb" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="fairphone" revision="3ccdfb5200c578ce349bcd985e1f95a241bc50d5" />
   <project name="platform/vendor/qcom-opensource/lights" path="vendor/qcom/opensource/lights" remote="codelinaro" revision="a5d6338d75992bc6ad748459638e558835848da3" />
-  <project name="vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="diamaneos" />
+  <project name="vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="diamaneos" revision="62a9172e4e82894df98c5e567714dac779d00d47" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" remote="fairphone" revision="7e65693c12f98c3aca9721287dc2c648ea83e65a" />
-  <project name="vendor_qcom_opensource_healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="diamaneos" />
+  <project name="vendor_qcom_opensource_healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="diamaneos" revision="fe0c7db0aa6a37b0080c9dd8652435486811f117" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- linux-msm QRTR file server and protection-domain mapper for the modem
        and DSPs, in place of Qualcomm's tftp_server and pd-mapper. tqftpserv:
        memory and path fixes, unlink and truncation. qrtr: the library is
        installed as libqrtr_linux_msm.so, next to Qualcomm's libqrtr.so.
        pd-mapper: unmodified, the last commit that builds for Android. -->
-  <project name="vendor_qcom_opensource_tqftpserv" path="vendor/qcom/opensource/tqftpserv" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_qrtr" path="vendor/qcom/opensource/qrtr" remote="diamaneos" />
+  <project name="vendor_qcom_opensource_tqftpserv" path="vendor/qcom/opensource/tqftpserv" remote="diamaneos" revision="7043de65014323a2723c6942aa2ce2428b549d2d" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_qrtr" path="vendor/qcom/opensource/qrtr" remote="diamaneos" revision="50efd7cdbe985e7a4027c945377fc20440722a62" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="pd-mapper" path="vendor/qcom/opensource/pd-mapper" remote="linux-msm" revision="107104b20bccc1089ba46893e64b3bdcb98c6830" />
   <!-- Qualcomm's GNSS HAL and location libraries from CodeLinaro, in place of
        the closed stock builds. gps and location: Soong builds, the libraries
@@ -168,56 +168,56 @@
        daemons. qmi-framework: Qualcomm's public QMI framework with a Soong
        build, its client linked into libloc_api_v02. core-utils:
        unmodified, for libqti_vndfwk_detect_vendor. -->
-  <project name="hardware_qcom_gps" path="hardware/qcom/gps" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_location" path="vendor/qcom/opensource/location" remote="diamaneos" />
-  <project name="vendor_qcom_opensource_qmi-framework" path="vendor/qcom/opensource/qmi-framework" remote="diamaneos" />
+  <project name="hardware_qcom_gps" path="hardware/qcom/gps" remote="diamaneos" revision="70b2a98b5682b64dba29b46399a1e6bb736e2d0f" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_location" path="vendor/qcom/opensource/location" remote="diamaneos" revision="f85d35b8ad6b97f86d850419fb745d38f8807039" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="vendor_qcom_opensource_qmi-framework" path="vendor/qcom/opensource/qmi-framework" remote="diamaneos" revision="86ba92c9b3a698fa4acdc94f16f8a9ec547ee38d" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <project name="platform/vendor/qcom-opensource/core-utils-vendor" path="vendor/qcom/opensource/core-utils" remote="codelinaro" revision="c4bd65ba4c0a068eda3c8dc9dc84ea8d10a0f5de" />
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
-  <project name="platform_frameworks_base" path="frameworks/base" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="diamaneos" revision="cc5b464d608421cdceac18f25842973518f8d20d" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- DiamaneOS palette style in monet -->
-  <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="diamaneos" revision="013498ae2dfe77b030d880eb53e680d7d2571ef8" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- Wallpaper & style previews that match the applied palette -->
-  <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="diamaneos" groups="pdk-fs,sysui-studio" />
+  <project name="platform_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="diamaneos" revision="9391a4ac5749e9b63e2bca2b34861bceeab6b94e" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs,sysui-studio" />
   <!-- Wallpaper previews that follow the contrast setting -->
-  <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="diamaneos" groups="pdk-fs,sysui-studio" />
+  <project name="platform_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="diamaneos" revision="a6995598272a23819121d52438d81eca0c2afbd1" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs,sysui-studio" />
   <!-- Home, All apps and Recents -->
-  <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <project name="platform_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="diamaneos" revision="267e22b07bdafe549973393e0b18d3b8639f2088" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Sandboxed Google Play: its crash notice reports to the DiamaneOS issue tracker -->
-  <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="diamaneos" revision="bf29b59281f0e4e10e655c1c08f1f389b5f09bd3" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- Network location and geocoder: no GrapheneOS geocoding server, and OpenStreetMap
        requests name DiamaneOS -->
-  <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_apps_NetworkLocation" path="packages/apps/NetworkLocation" remote="diamaneos" revision="5d9f11803172f24f31770edf07fdb7462b868981" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- System error reports: the Report button opens the DiamaneOS issue tracker -->
-  <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_apps_LogViewer" path="packages/apps/LogViewer" remote="diamaneos" revision="fa51ededf541239e2b43c3e85967fd76ba17393c" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
-  <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc" remote="diamaneos" />
+  <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc" remote="diamaneos" revision="f5483f3905034ea529ad0f708391dcb6865df3a7" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Search at the bottom, state lamps, hierarchy -->
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="diamaneos" revision="df79e68d43c308550ce132ef0b0acaac2159b024" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
   <!-- Settings search slot -->
-  <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="diamaneos" revision="5489edec4b31bd87d2e0b5c6993143d98280c2e7" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- Material 3 Clock -->
-  <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="diamaneos" revision="a1c1cd0436521bf30dbe0914cea6aab284666e96" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- Calculator AC key and smart brackets -->
-  <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="diamaneos" />
+  <project name="platform_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="diamaneos" revision="cbaf985eed229a2e904e9aaa569eb3a2b3a796d4" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Recovery and fastbootd titles -->
-  <project name="platform_bootable_recovery" path="bootable/recovery" remote="diamaneos" groups="pdk" />
+  <project name="platform_bootable_recovery" path="bootable/recovery" remote="diamaneos" revision="ca3e47a99446c652905cd94069e4ca9724acff11" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk" />
   <!-- microSD: adopted as encrypted ext4, checked before every mount -->
-  <project name="platform_system_vold" path="system/vold" remote="diamaneos" groups="pdk" />
+  <project name="platform_system_vold" path="system/vold" remote="diamaneos" revision="a002a52ecfebcef73f77f08d78d4c5c937a728a3" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk" />
   <!-- Files: Get info takes the system palette like the other screens -->
-  <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="diamaneos" revision="7d58422937fa41516a8d26e3ec5afa815820eb17" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keyboard privacy fixes -->
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="diamaneos" groups="pdk-fs" />
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="diamaneos" revision="4147e22a65f7bf19b28385ee134a1c5712711e6a" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" groups="pdk-fs" />
   <!-- System updates (official builds only): the DiamaneOS update server -->
-  <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="diamaneos" />
+  <project name="platform_packages_apps_Updater" path="packages/apps/Updater" remote="diamaneos" revision="b231afc66df97c3fb7ee632b220f3d0b9edcdaa4" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- Gallery: LineageOS's Glimpse, forked without network access. Screenshot
        editor: LineageOS's Canvas, forked so a screenshot from SystemUI's Edit
        gets Done (Save, Copy and delete, Delete). vendor/diamaneos selects them
        (DIAMANEOS_GALLERY, DIAMANEOS_SCREENSHOT_EDITOR). -->
-  <project name="packages_apps_Glimpse" path="packages/apps/Glimpse" remote="diamaneos" />
-  <project name="packages_apps_Canvas" path="packages/apps/Canvas" remote="diamaneos" />
+  <project name="packages_apps_Glimpse" path="packages/apps/Glimpse" remote="diamaneos" revision="21ceb047442f9667ab911c2df4ba79b7c9b90f20" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
+  <project name="packages_apps_Canvas" path="packages/apps/Canvas" remote="diamaneos" revision="3c579998127ffbb167b5562ff16938842fcaa977" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
-  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
+  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" revision="7591175a592349ca6b1a7e57c60d9d6cf5eef6f2" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" clone-depth="1" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="7b49c1ff61fb87a31c0eae1449aa76aae5fc133e" upstream="refs/tags/2026102500" dest-branch="refs/tags/2026102500" />
 </manifest>
