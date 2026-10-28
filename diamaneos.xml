@@ -81,6 +81,7 @@
   <remove-project name="platform_packages_modules_Connectivity" />
   <remove-project name="platform_packages_modules_DnsResolver" />
   <remove-project name="platform_packages_modules_NetworkStack" />
+  <remove-project name="platform_packages_modules_Nfc" />
   <remove-project name="platform_packages_modules_Permission" />
   <remove-project name="platform_packages_modules_Wifi" />
   <remove-project name="platform_system_vold" />
@@ -134,6 +135,8 @@
   <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Our Auditor gets the hibernation exemption GrapheneOS gives its own. -->
   <project name="platform_packages_modules_Permission" path="packages/modules/Permission" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
+  <!-- NFC turns off after the auto-off timeout the user sets. -->
+  <project name="platform_packages_modules_Nfc" path="packages/modules/Nfc" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
   <project name="platform_build" path="build/make" remote="diamaneos" groups="pdk,sysui-studio">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
