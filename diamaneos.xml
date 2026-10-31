@@ -95,6 +95,8 @@
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims" remote="diamaneos" />
+  <!-- Open data daemon and the two libraries that replace the stock nicmd stack. -->
+  <project name="hardware_diamaneos_datad" path="hardware/diamaneos/datad" remote="diamaneos" />
   <!-- Maintained carrier service with optional device configuration data. -->
   <project name="platform_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="diamaneos" />
   <!-- Preserve carrier HTTPS provisioning without the inherited Google push SDKs. -->
