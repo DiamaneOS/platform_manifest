@@ -14,7 +14,7 @@ projects on top.
     branches. The build tools follow `main`.
 - Pinned to exact commits:
   - Fairphone, CodeLinaro and linux-msm projects
-  - DiamaneOS's unmodified mirrors of LineageOS's power HAL projects
+  - DiamaneOS's unmodified mirror of hardware/google/pixel for libperfmgr
   - AOSP's nos host libraries, which GrapheneOS leaves out
 - It also brings in the published kernel prebuilts
   (`device/fairphone/FP6-kernel`) and the build tools (`tools/diamaneos`).
@@ -30,6 +30,13 @@ Build with the tools in `tools/diamaneos`, as their
 [BUILDING.md](https://github.com/DiamaneOS/diamaneos-tools/blob/main/docs/BUILDING.md)
 describes.
 Each build records the exact revision of every project (`repo manifest -r`).
+
+## Source dependencies
+
+- Adopt the Qualcomm supplicant command backend before the FP6 device change
+  that selects `lib_driver_cmd_qcwcn`.
+- The Power HAL revision is pinned to the implementation that honors
+  `vendor.powerhal.adpf_task_profiles`. Keep that behavior when updating the pin.
 
 ## Updating to a new GrapheneOS release
 
