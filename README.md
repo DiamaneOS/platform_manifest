@@ -15,6 +15,7 @@ projects on top.
 - Pinned to exact commits:
   - Fairphone, CodeLinaro and linux-msm projects
   - DiamaneOS's unmodified mirror of hardware/google/pixel for libperfmgr
+  - DiamaneOS's fork of LineageOS's hardware/lineage/interfaces for the power HAL
   - AOSP's nos host libraries, which GrapheneOS leaves out
 - It also brings in the published kernel prebuilts
   (`device/fairphone/FP6-kernel`) and the build tools (`tools/diamaneos`).
