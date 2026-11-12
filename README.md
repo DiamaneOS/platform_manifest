@@ -11,7 +11,7 @@ projects on top.
   - `remove-project` lines for the GrapheneOS and AOSP projects DiamaneOS
     replaces with its forks, and for the kernels of other devices
   - the DiamaneOS forks and projects, which follow their `android17`
-    branches. The build tools and the hardened_malloc fork follow `main`.
+    branches. The build tools follow `main`.
 - Pinned to exact commits:
   - Fairphone, CodeLinaro and linux-msm projects
   - DiamaneOS's unmodified mirror of hardware/google/pixel for libperfmgr
