@@ -215,8 +215,9 @@
   <project name="platform_bootable_recovery" path="bootable/recovery" remote="diamaneos" groups="pdk" />
   <!-- microSD: adopted as encrypted ext4, checked before every mount -->
   <project name="platform_system_vold" path="system/vold" remote="diamaneos" groups="pdk" />
-  <!-- Allocator: slab quarantine length 2, for a phone without memory tagging -->
-  <project name="hardened_malloc" path="external/hardened_malloc" remote="diamaneos" />
+  <!-- Allocator: slab quarantine length 2, for a phone without memory tagging. The fork works on
+       main, as its upstream does. -->
+  <project name="hardened_malloc" path="external/hardened_malloc" remote="diamaneos" revision="main" />
   <!-- Files: Get info takes the system palette like the other screens -->
   <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keyboard privacy fixes -->
