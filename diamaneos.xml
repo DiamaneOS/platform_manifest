@@ -232,4 +232,7 @@
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
   <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
+  <!-- Fixes kept as patches until upstream carries them. The build tools apply the series on top
+       of the synced sources ("diamaneos build sync" or "diamaneos patches apply"). -->
+  <project name="platform_patches" path="diamaneos/patches" remote="diamaneos" />
 </manifest>

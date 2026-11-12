@@ -19,6 +19,9 @@ projects on top.
   - AOSP's nos host libraries, which GrapheneOS leaves out
 - It also brings in the published kernel prebuilts
   (`device/fairphone/FP6-kernel`) and the build tools (`tools/diamaneos`).
+- `diamaneos/patches` holds fixes kept as patches until upstream carries them.
+  A plain `repo sync` does not apply them. `diamaneos build sync` does, and so
+  does `diamaneos patches apply --source .` after a sync by hand.
 
 ## Get the source
 
