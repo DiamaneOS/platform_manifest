@@ -4,7 +4,7 @@
 <manifest>
 
   <!-- DiamaneOS overlay (forks, own projects and pinned upstream sources). -->
-  <remote name="diamaneos" fetch="https://github.com/DiamaneOS/" revision="android17" />
+  <remote name="diamaneos" fetch="https://github.com/DiamaneOS/" revision="refs/tags/2026111400" />
   <!-- Upstreams of repositories used unmodified, pinned to exact commits. -->
   <remote name="codelinaro" fetch="https://git.codelinaro.org/clo/la/" />
   <remote name="codelinaro-le" fetch="https://git.codelinaro.org/clo/le/" />
@@ -234,7 +234,7 @@
   <project name="packages_apps_Canvas" path="packages/apps/Canvas" remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
   <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="main" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="refs/tags/2026111400" />
   <!-- Fixes kept as patches until upstream carries them. The build tools apply the series on top
        of the synced sources ("diamaneos build sync" or "diamaneos patches apply"). -->
   <project name="platform_patches" path="diamaneos/patches" remote="diamaneos" />
