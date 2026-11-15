@@ -86,6 +86,7 @@
   <remove-project name="platform_packages_modules_NetworkStack" />
   <remove-project name="platform_packages_modules_Nfc" />
   <remove-project name="platform_packages_modules_Permission" />
+  <remove-project name="platform_packages_modules_Uwb" />
   <remove-project name="platform_packages_modules_Wifi" />
   <remove-project name="platform_packages_providers_MediaProvider" />
   <remove-project name="platform_system_vold" />
@@ -147,6 +148,8 @@
   <project name="platform_packages_modules_Nfc" path="packages/modules/Nfc" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- A file an app wrote itself is registered when the app adds it by its path. -->
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <!-- Bad ranging calls are refused before they can restart the system process. -->
+  <project name="platform_packages_modules_Uwb" path="packages/modules/Uwb" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
   <project name="platform_build" path="build/make" remote="diamaneos" groups="pdk,sysui-studio">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
