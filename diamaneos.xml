@@ -155,7 +155,7 @@
   <project name="platform_packages_modules_Uwb" path="packages/modules/Uwb" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Protected VMs: the VM manager lends VM memory from the pool set aside at boot, and the virt APEX
        carries the signed kernels of the decode service VM and the SD card filesystem VM. -->
-  <project name="platform_packages_modules_Virtualization" path="packages/modules/Virtualization" remote="diamaneos" groups="pdk" revision="wip/vm-randstruct-20261125" />
+  <project name="platform_packages_modules_Virtualization" path="packages/modules/Virtualization" remote="diamaneos" groups="pdk" revision="wip/vm-rebased-20261125" />
   <!-- crosvm opens the filesystem VM's SD card as a raw disk and builds the FUSE library fsvmd uses. -->
   <project name="platform_external_crosvm" path="external/crosvm" remote="diamaneos" groups="pdk" revision="wip/vm-squash-20261124" />
   <!-- The decode service: images other apps hand over are decoded in a protected VM. -->
@@ -248,8 +248,8 @@
   <project name="packages_apps_Glimpse" path="packages/apps/Glimpse" remote="diamaneos" />
   <project name="packages_apps_Canvas" path="packages/apps/Canvas" remote="diamaneos" />
   <!-- DiamaneOS: the published kernel prebuilts and the build tools. -->
-  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="wip/vm-randstruct-20261125" />
-  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="wip/vm-randstruct-20261125" />
+  <project name="device_fairphone_FP6-kernels" path="device/fairphone/FP6-kernel" remote="diamaneos" clone-depth="1" revision="wip/vm-rebased-20261125" />
+  <project name="diamaneos-tools" path="tools/diamaneos" remote="diamaneos" revision="wip/vm-rebased-20261125" />
   <!-- Fixes kept as patches until upstream carries them. The build tools apply the series on top
        of the synced sources ("diamaneos build sync" or "diamaneos patches apply"). -->
   <project name="platform_patches" path="diamaneos/patches" remote="diamaneos" revision="wip/vm-squash-20261124" />
