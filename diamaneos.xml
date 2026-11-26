@@ -99,7 +99,7 @@
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="diamaneos" groups="pdk-fs" />
   <project name="platform_packages_apps_SetupWizard2" path="packages/apps/SetupWizard2" remote="diamaneos" />
   <project name="device_fairphone_FP6" path="device/fairphone/FP6" remote="diamaneos" revision="wip/vm-squash-20261124" />
-  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" revision="wip/vm-squash-20261124" />
+  <project name="vendor_diamaneos" path="vendor/diamaneos" remote="diamaneos" revision="wip/vm-fix2d-20261125" />
   <!-- Isolated IMS data broker. The stock IMS and IWLAN frontends stay in
        the authenticated vendor selection. AML is not selected. -->
   <project name="hardware_diamaneos_ims" path="hardware/diamaneos/ims" remote="diamaneos" />
@@ -150,16 +150,16 @@
   <!-- NFC turns off after the auto-off timeout the user sets. -->
   <project name="platform_packages_modules_Nfc" path="packages/modules/Nfc" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- A file an app wrote itself is registered when the app adds it by its path. -->
-  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="wip/vm-squash-20261124" />
+  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="wip/vm-fix2d-20261125" />
   <!-- Bad ranging calls are refused before they can restart the system process. -->
   <project name="platform_packages_modules_Uwb" path="packages/modules/Uwb" remote="diamaneos" groups="pdk-cw-fs,pdk-fs" />
   <!-- Protected VMs: the VM manager lends VM memory from the pool set aside at boot, and the virt APEX
        carries the signed kernels of the decode service VM and the SD card filesystem VM. -->
-  <project name="platform_packages_modules_Virtualization" path="packages/modules/Virtualization" remote="diamaneos" groups="pdk" revision="wip/vm-rebased-20261125" />
+  <project name="platform_packages_modules_Virtualization" path="packages/modules/Virtualization" remote="diamaneos" groups="pdk" revision="wip/vm-fix2d-20261125" />
   <!-- crosvm opens the filesystem VM's SD card as a raw disk and builds the FUSE library fsvmd uses. -->
   <project name="platform_external_crosvm" path="external/crosvm" remote="diamaneos" groups="pdk" revision="wip/vm-squash-20261124" />
   <!-- The decode service: images other apps hand over are decoded in a protected VM. -->
-  <project name="platform_packages_apps_Sanitizer" path="packages/apps/DiamaneOSSanitizer" remote="diamaneos" revision="wip/vm-squash-20261124" />
+  <project name="platform_packages_apps_Sanitizer" path="packages/apps/DiamaneOSSanitizer" remote="diamaneos" revision="wip/vm-fix2d-20261125" />
   <!-- The share sheet decodes supplied icons as the app that sent them. -->
   <project name="platform_packages_modules_IntentResolver" path="packages/modules/IntentResolver" remote="diamaneos" groups="pdk,sysui-studio" revision="wip/vm-squash-20261124" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
@@ -203,7 +203,7 @@
   <!-- Tally and Pleat: the DiamaneOS forks replace GrapheneOS's projects. Their android17 branches
        carry the Tally work. -->
   <!-- SystemUI shell, WM Shell motion, SettingsLib switches, system label, fallback boot logo -->
-  <project name="platform_frameworks_base" path="frameworks/base" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="wip/vm-squash-20261124" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" revision="wip/vm-fix2d-20261125" />
   <!-- DiamaneOS palette style in monet -->
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="diamaneos" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <!-- Wallpaper & style previews that match the applied palette -->
@@ -222,7 +222,7 @@
   <!-- eSIM manager (LPA), off until the user turns on eSIM support. -->
   <project name="platform_packages_apps_DiamaneOSEuicc" path="packages/apps/DiamaneOSEuicc" remote="diamaneos" />
   <!-- Search at the bottom, state lamps, hierarchy -->
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="wip/vm-squash-20261124" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="diamaneos" groups="pdk-cw-tvc,pdk-fs,sysui-studio" revision="wip/vm-fix2d-20261125" />
   <!-- Settings search slot -->
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="diamaneos" groups="pdk-fs" />
   <!-- Material 3 Clock -->
@@ -232,7 +232,7 @@
   <!-- Recovery and fastbootd titles -->
   <project name="platform_bootable_recovery" path="bootable/recovery" remote="diamaneos" groups="pdk" />
   <!-- microSD: adopted as encrypted ext4, checked before every mount -->
-  <project name="platform_system_vold" path="system/vold" remote="diamaneos" groups="pdk" revision="wip/vm-squash-20261124" />
+  <project name="platform_system_vold" path="system/vold" remote="diamaneos" groups="pdk" revision="wip/vm-fix2d-20261125" />
   <!-- Allocator: slab quarantine length 2, for a phone without memory tagging -->
   <project name="hardened_malloc" path="external/hardened_malloc" remote="diamaneos" />
   <!-- Files: Get info takes the system palette like the other screens -->
