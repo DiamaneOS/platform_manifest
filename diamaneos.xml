@@ -161,7 +161,7 @@
   <!-- The decode service: images other apps hand over are decoded in a protected VM. -->
   <project name="platform_packages_apps_Sanitizer" path="packages/apps/DiamaneOSSanitizer" remote="diamaneos" revision="wip/vm-squash-20261126" />
   <!-- The share sheet decodes supplied icons as the app that sent them. -->
-  <project name="platform_packages_modules_IntentResolver" path="packages/modules/IntentResolver" remote="diamaneos" groups="pdk,sysui-studio" revision="wip/vm-squash-20261124" />
+  <project name="platform_packages_modules_IntentResolver" path="packages/modules/IntentResolver" remote="diamaneos" groups="pdk,sysui-studio" revision="wip/vm-squash-20261126" />
   <!-- Keep the device's boot header arguments when release tools rebuild images. -->
   <project name="platform_build" path="build/make" remote="diamaneos" groups="pdk,sysui-studio">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
